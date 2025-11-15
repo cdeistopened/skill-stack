@@ -47,18 +47,20 @@
 
 ## Transcript Status Tracker
 
-### ✅ Completed (6/10)
+### ✅ Completed (8/10)
 - [x] **The Hormones Behind Inflammation** (Ask Your Herb Doctor show - different series)
 - [x] **Autoimmune and Movement Disorders** (256 lines → 359 polished lines, 16 sections)
 - [x] **Food Quality** (334 lines → 371 polished lines, 22 sections)
 - [x] **Coronavirus Part 1** (388 lines → 412 polished lines, 17 sections)
 - [x] **Coronavirus Part 2** (412 lines → 403 polished lines, 17 sections)
 - [x] **Coronavirus Part 3** (358 lines → 516 polished lines, 29 sections)
+- [x] **Fats** (409 lines → 366 polished lines, 18 sections)
+- [x] **Empiricism vs Dogmatic Modeling** (412 lines → 349 polished lines, 16 sections)
 
 ### 🚧 In Progress (0/10)
 - [ ] None currently
 
-### 📋 To Do (4/10)
+### 📋 To Do (2/10)
 
 #### Batch 1: Shorter Transcripts (Start Here)
 1. ~~**Autoimmune and Movement Disorders**~~ ✅ COMPLETED
@@ -183,9 +185,9 @@ For each finished transcript, verify:
 ## Progress Summary
 
 **Total Transcripts:** 10
-**Completed:** 5 (Autoimmune, Food Quality, Coronavirus Parts 1-3)
+**Completed:** 7 (Autoimmune, Food Quality, Coronavirus Parts 1-3, Fats, Empiricism)
 **In Progress:** 0
-**Remaining:** 5
-**Completion:** 50%
+**Remaining:** 3
+**Completion:** 70%
 
-**Next Action:** Continue with remaining 5 transcripts
+**Next Action:** Continue with final 3 transcripts (Biochemical Health, Evolution, A Self Ordering World)
