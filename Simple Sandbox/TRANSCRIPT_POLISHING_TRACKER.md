@@ -47,16 +47,18 @@
 
 ## Transcript Status Tracker
 
-### ✅ Completed (4/10)
+### ✅ Completed (6/10)
 - [x] **The Hormones Behind Inflammation** (Ask Your Herb Doctor show - different series)
 - [x] **Autoimmune and Movement Disorders** (256 lines → 359 polished lines, 16 sections)
 - [x] **Food Quality** (334 lines → 371 polished lines, 22 sections)
+- [x] **Coronavirus Part 1** (388 lines → 412 polished lines, 17 sections)
+- [x] **Coronavirus Part 2** (412 lines → 403 polished lines, 17 sections)
 - [x] **Coronavirus Part 3** (358 lines → 516 polished lines, 29 sections)
 
 ### 🚧 In Progress (0/10)
 - [ ] None currently
 
-### 📋 To Do (6/10)
+### 📋 To Do (4/10)
 
 #### Batch 1: Shorter Transcripts (Start Here)
 1. ~~**Autoimmune and Movement Disorders**~~ ✅ COMPLETED
@@ -181,9 +183,9 @@ For each finished transcript, verify:
 ## Progress Summary
 
 **Total Transcripts:** 10
-**Completed:** 3 (Autoimmune and Movement Disorders, Food Quality, Coronavirus Part 3)
+**Completed:** 5 (Autoimmune, Food Quality, Coronavirus Parts 1-3)
 **In Progress:** 0
-**Remaining:** 7
-**Completion:** 30%
+**Remaining:** 5
+**Completion:** 50%
 
-**Next Action:** Continue with remaining transcripts
+**Next Action:** Continue with remaining 5 transcripts
