@@ -47,19 +47,19 @@
 
 ## Transcript Status Tracker
 
-### ✅ Completed (1/10)
+### ✅ Completed (2/10)
 - [x] **The Hormones Behind Inflammation** (Ask Your Herb Doctor show - different series)
+- [x] **Autoimmune and Movement Disorders** (256 lines → 359 polished lines, 16 sections)
 
 ### 🚧 In Progress (0/10)
 - [ ] None currently
 
-### 📋 To Do (10/10)
+### 📋 To Do (8/10)
 
 #### Batch 1: Shorter Transcripts (Start Here)
-1. **Autoimmune and Movement Disorders** (256 lines)
-   - Status: Not started
-   - Estimated sections: ~8-10
-   - Estimated batches: 2-3
+1. ~~**Autoimmune and Movement Disorders**~~ ✅ COMPLETED
+   - Status: DONE - 16 sections, 359 lines
+   - Committed: 1648607
 
 2. **Food Quality** (334 lines)
    - Status: Not started
@@ -179,9 +179,9 @@ For each finished transcript, verify:
 ## Progress Summary
 
 **Total Transcripts:** 10
-**Completed:** 0
+**Completed:** 1 (Autoimmune and Movement Disorders)
 **In Progress:** 0
-**Remaining:** 10
-**Completion:** 0%
+**Remaining:** 9
+**Completion:** 10%
 
-**Next Action:** Begin with "Autoimmune and Movement Disorders" (256 lines)
+**Next Action:** Continue with "Food Quality" (334 lines) or another transcript
