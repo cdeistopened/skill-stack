@@ -103,3 +103,95 @@ And the amazing thing is: this is the worst these tools will ever be. I used to 
 **Sundar Pichai**: Well, I think some folks need some sleep! But look, I'm excited for the Gemini roadmap and how it's coming to all our products. We're also shipping new things—I love Flow, and NotebookLM has a passionate, growing community. There's a lot more to come.
 
 **Logan Kilpatrick**: I'm excited. Thank you, Sundar, for sitting down. And thank you everyone for watching Release Notes. We'll see you in the next episode.
+
+---
+
+## Vibe Coding Skills Breakdown
+
+> **Charlie's take**: Most important abilities for vibe coding are:
+> - Intuition and logical thinking
+> - Imperfectionism and willingness to try things and iterate and reverse course
+>
+> Basically need to hit your keyboard against the head and feel comfortable with your own ignorance to some extent.
+
+In the era of "vibe coding" (a term popularized by Andrej Karpathy to describe coding where you manage the AI rather than writing every line), the role of a developer shifts from bricklayer to architect and project manager.
+
+You no longer need to memorize syntax, but you do need to understand how systems fit together so you can tell the AI what to build and judge if it did a good job.
+
+Here is the breakdown of the most important aspects to learn now, along with the best current resources.
+
+### 1. The New Core Skills (What to focus on)
+
+The "basics" have changed. Instead of "How do I write a for loop?", the critical questions are now about structure and safety.
+
+#### A. Architecture & System Design (The "Blueprint")
+
+This is now your most valuable skill. If you ask an AI to "build an app," it will create a mess. You must define the data structure and flow before you generate a single line of code.
+
+**What to learn:**
+- **Data Modeling**: Learn how to define your database schema (e.g., "Users have many Posts") before prompting. The AI needs this constraints.
+- **State Management**: Understand how data moves (e.g., Client → API → Database).
+- **Component Modularity**: Learn to ask for small, isolated pieces of code (e.g., "Create a button component") rather than giant files, which confuse LLMs.
+
+**Resource**: System Design for AI Coding (Focuses on how to prompt with architecture in mind).
+
+#### B. Git & GitHub (The "Save Point")
+
+AI code generation is fast but chaotic. You will break your app constantly. Git is no longer just for teams; it is your personal "undo" button.
+
+**The "Vibe Coding" Git Workflow:**
+- **Commit on Green**: The second the AI writes code that works, commit it.
+- **Branch for Features**: Never let the AI touch your working main code directly. Create a branch (e.g., feature/add-login), let the AI mess it up, and only merge it back when it works.
+- **Revert Aggressively**: If the AI starts hallucinating or breaking things, do not try to "fix" it with more prompts. git reset to the last working state and try a different prompt.
+
+**Resource**: Git and GitHub for Vibe Coders (Excellent guide specifically on using Git as a safety net for AI).
+
+#### C. Debugging & Review (The "BS Detector")
+
+You are now a code reviewer. AI writes code that looks correct but is subtly wrong (hallucinations).
+
+**What to watch for:**
+- **Hallucinated Libraries**: AI often invents packages that don't exist. Always check package.json or requirements.txt.
+- **Security Holes**: AI optimizes for "making it work," not security. It will happily write code that allows SQL injection if you don't warn it.
+- **"Jenga Code"**: AI loves to patch issues by adding more code on top. If a file gets too long, ask the AI to "Refactor this file for readability" before adding features.
+
+### 2. The Tooling Ecosystem
+
+Don't just learn "coding"; learn the workflow of these specific tools.
+
+| Tool | Best For | Key Skill to Learn |
+|---|---|---|
+| Cursor | The Professional's Choice. It's a fork of VS Code. Best for control. | Learn "Composer" (Cmd+I) to write multi-file code and "Context" (@Symbols) to tag specific files so the AI knows what you are talking about. |
+| Replit | The "Idea to App" Speedster. Best for building full apps from scratch. | Learn the Replit Agent workflow. It creates the plan, sets up the environment, and deploys for you. |
+| v0.dev | UI/Frontend. | Use this to generate your visual interface, then copy the code into Cursor/Replit for the logic. |
+
+### 3. Recommended Learning Path (Curriculum)
+
+Since traditional university courses are too slow for this, use this self-directed path:
+
+**Weekend 1: The "Git Safety Net"**
+- Don't write code yet. Install Git. Create a repo on GitHub. Learn git add, git commit, git branch, and git reset. Do not skip this.
+- *Goal*: Be able to save your work and revert mistakes.
+
+**Weekend 2: "Cursor" Basics**
+- Download Cursor. Watch a "Cursor for Beginners" tutorial (see below).
+- Build a simple "Hello World" website using only Cmd+K (inline edits) and Cmd+L (chat).
+- *Goal*: Get comfortable "talking" to your code editor.
+
+**Weekend 3: The "Architect" Project**
+- Pick a simple idea (e.g., a To-Do list).
+- Don't open the editor. Write a text file describing exactly what the app does: "User logs in, User sees list, List item has title and checkbox."
+- Paste that "spec" into Cursor Composer or Replit Agent.
+- *Goal*: See how a good description leads to good code.
+
+### 4. Top Video Resource
+
+This video is the perfect crash course. It skips the old-school syntax lessons and focuses entirely on the workflow of using modern AI tools like Cursor to build apps fast.
+
+**How To Use Cursor AI 2.0 - Full Tutorial For Beginners 2026**
+
+*Why this matters*: It demonstrates the "Composer" feature in Cursor, which is currently the gold standard for multi-file "vibe coding," showing you exactly how to act as the architect while the AI acts as the builder.
+
+---
+
+*Next Step: Generate a "Project Spec Template" to paste into Cursor/Replit to ensure the AI builds your architecture correctly from the start.*
