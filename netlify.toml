@@ -1,0 +1,114 @@
+[build]
+  command = "npm ci --include=dev && npx convex deploy --cmd 'npm run build'"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Raw markdown passthrough - explicit rule prevents SPA fallback from intercepting
+[[redirects]]
+  from = "/raw/*"
+  to = "/raw/:splat"
+  status = 200
+  force = true
+
+# Static files passthrough
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+# SPA fallback for client-side routing (must be last)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Edge functions for dynamic Convex HTTP proxying
+# RSS feeds
+[[edge_functions]]
+  path = "/rss.xml"
+  function = "rss"
+
+[[edge_functions]]
+  path = "/rss-full.xml"
+  function = "rss"
+
+# Sitemap
+[[edge_functions]]
+  path = "/sitemap.xml"
+  function = "sitemap"
+
+# API endpoints
+[[edge_functions]]
+  path = "/api/posts"
+  function = "api"
+
+[[edge_functions]]
+  path = "/api/post"
+  function = "api"
+
+[[edge_functions]]
+  path = "/api/export"
+  function = "api"
+
+# Geo location API for visitor map
+[[edge_functions]]
+  path = "/api/geo"
+  function = "geo"
+
+# Open Graph bot detection for social preview cards only
+# Excludes raw markdown, static assets, and AI-consumable files
+[[edge_functions]]
+  path = "/*"
+  function = "botMeta"
+  excludedPath = [
+    "/raw/*",
+    "/assets/*",
+    "/api/*",
+    "/.netlify/*",
+    "/favicon.ico",
+    "/favicon.svg",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/rss.xml",
+    "/rss-full.xml",
+    "/llms.txt",
+    "/openapi.yaml"
+  ]
+
+# Security and SEO headers (global, excludes /raw/*)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Link header removed from global scope to avoid applying to /raw/*
+
+# Link header for SPA entry point only
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Link = "</llms.txt>; rel=\"author\""
+
+# Raw markdown files - AI friendly headers
+# No Link header, no noindex - optimized for AI crawlers
+[[headers]]
+  for = "/raw/*"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=3600"
+    # Removed X-Robots-Tag = "noindex" - AI crawlers need to index raw content
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "development"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "development"

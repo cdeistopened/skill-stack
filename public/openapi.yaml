@@ -1,0 +1,195 @@
+openapi: 3.0.3
+info:
+  title: markdown sync framework API
+  description: |
+    API for accessing blog posts and pages as markdown content.
+    All endpoints return JSON by default. Use format=md for raw markdown.
+  version: 1.6.0
+  contact:
+    url: https://github.com/waynesutton/markdown-site
+
+servers:
+  - url: https://www.markdown.fast
+    description: Production server
+
+paths:
+  /api/posts:
+    get:
+      summary: List all posts
+      description: Returns a list of all published blog posts with metadata
+      operationId: listPosts
+      responses:
+        '200':
+          description: List of posts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  site:
+                    type: string
+                    example: markdown sync framework
+                  url:
+                    type: string
+                    example: https://markdown.fast
+                  posts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/PostSummary'
+
+  /api/post:
+    get:
+      summary: Get a single post
+      description: Returns a single post by slug. Use format=md for raw markdown.
+      operationId: getPost
+      parameters:
+        - name: slug
+          in: query
+          required: true
+          description: The post slug (URL path)
+          schema:
+            type: string
+        - name: format
+          in: query
+          required: false
+          description: Response format (json or md)
+          schema:
+            type: string
+            enum: [json, md, markdown]
+            default: json
+      responses:
+        '200':
+          description: Post content
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+            text/markdown:
+              schema:
+                type: string
+        '400':
+          description: Missing slug parameter
+        '404':
+          description: Post not found
+
+  /api/export:
+    get:
+      summary: Export all posts with content
+      description: Returns all posts with full markdown content for batch processing
+      operationId: exportPosts
+      responses:
+        '200':
+          description: All posts with full content
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  site:
+                    type: string
+                  url:
+                    type: string
+                  exportedAt:
+                    type: string
+                    format: date-time
+                  posts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Post'
+
+  /rss.xml:
+    get:
+      summary: RSS feed
+      description: Standard RSS 2.0 feed with post descriptions
+      operationId: rssFeed
+      responses:
+        '200':
+          description: RSS XML feed
+          content:
+            application/rss+xml:
+              schema:
+                type: string
+
+  /rss-full.xml:
+    get:
+      summary: Full content RSS feed
+      description: RSS feed with complete post content (for LLMs)
+      operationId: rssFullFeed
+      responses:
+        '200':
+          description: RSS XML feed with full content
+          content:
+            application/rss+xml:
+              schema:
+                type: string
+
+  /sitemap.xml:
+    get:
+      summary: XML Sitemap
+      description: Dynamic sitemap for search engines
+      operationId: sitemap
+      responses:
+        '200':
+          description: XML Sitemap
+          content:
+            application/xml:
+              schema:
+                type: string
+
+components:
+  schemas:
+    PostSummary:
+      type: object
+      properties:
+        title:
+          type: string
+          example: How to Build a Blog
+        slug:
+          type: string
+          example: how-to-build-blog
+        description:
+          type: string
+          example: A guide to building a markdown blog
+        date:
+          type: string
+          format: date
+          example: '2025-01-15'
+        readTime:
+          type: string
+          example: 5 min read
+        tags:
+          type: array
+          items:
+            type: string
+          example: [tutorial, markdown]
+        url:
+          type: string
+          example: https://markdown.fast/how-to-build-blog
+        markdownUrl:
+          type: string
+          example: https://markdown.fast/api/post?slug=how-to-build-blog
+
+    Post:
+      type: object
+      properties:
+        title:
+          type: string
+        slug:
+          type: string
+        description:
+          type: string
+        date:
+          type: string
+          format: date
+        readTime:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+        url:
+          type: string
+        content:
+          type: string
+          description: Full markdown content
+
