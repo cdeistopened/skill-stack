@@ -2,15 +2,15 @@
 title: "Contact"
 slug: "contact"
 published: true
-contactForm: false
+contactForm: true
 newsletter: false
 order: 4
 ---
 
-You found the contact page. Nice
+# Get in Touch
 
-## Contact form demo
+Have a question about skills.md? Want to collaborate? Just want to say hi?
 
-This form does not work in production and AgentMail to send emails. See <a href="/how-to-use-agentmail"> How to use AgentMail with Markdown Sync for details.>
+Drop me a message below or find me on [X/Twitter](https://x.com/chdeist) or [LinkedIn](https://linkedin.com/in/charliedeist).
 
 <!-- contactform -->

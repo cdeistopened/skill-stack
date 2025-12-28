@@ -2,46 +2,28 @@
 title: Newsletter
 slug: newsletter
 published: true
-order: 15
+order: 3
 showInNav: true
-newsletter: false
+newsletter: true
 ---
 
-# Newsletter Demo Page
+# Join the Skill Stack
 
-This is a demo newsletter page available at `/newsletter`. The newsletter feature uses AgentMail for email infrastructure.
+Get new posts on skills, learning, and mastery delivered directly to your inbox.
+
+No spam. Unsubscribe anytime.
 
 <!-- newsletter -->
 
-## About AgentMail
+## What you'll get
 
-This newsletter integration is powered by AgentMail, which provides email infrastructure for the markdown blog framework.
+- Deep dives into the skills.md protocol
+- Practical frameworks for skill acquisition
+- Thoughts on learning, expertise, and mastery
+- Updates on the skills.md ecosystem
 
-AgentMail Newsletter integration features:
+## Why subscribe?
 
-- Newsletter subscriptions and sending
-- Contact forms on any post or page
-- Automated weekly digests
-- Developer notifications
-- Admin UI for subscriber management
-- CLI tools for sending newsletters and stats
+The Skill Stack newsletter explores the meta-skill of skill acquisition - the only skill that compounds everything else you learn.
 
-For complete setup instructions and detailed documentation, see the [How to use AgentMail with Markdown Sync](/blog/how-to-use-agentmail) guide.
-
-## What you will get
-
-When you subscribe, you will receive:
-
-- Notifications when new blog posts are published
-- Updates about new features and improvements
-- Tips and tricks for getting the most out of markdown sync
-
-## Subscribe Demo
-
-Use the form below to subscribe to our newsletter. We respect your privacy and you can unsubscribe at any time.
-
-## Privacy
-
-We only use your email address to send you newsletter updates. We never share your email with third parties or use it for any other purpose.
-
-To unsubscribe, click the unsubscribe link at the bottom of any newsletter email.
+Whether you're building expertise in a new domain, trying to level up professionally, or just curious about how skills really work, this newsletter is for you.
