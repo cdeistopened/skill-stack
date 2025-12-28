@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "markdown sync site",
+  "name_for_model": "markdown_sync_site",
+  "description_for_human": "An open-source markdown sync site you publish from the terminal with npm run sync",
+  "description_for_model": "Access blog posts and pages in markdown format. Use /api/posts for a list of all posts with metadata. Use /api/post?slug={slug}&format=md to get full markdown content of any post. Use /api/export for batch content with full markdown.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "/openapi.yaml"
+  },
+  "logo_url": "/images/logo.svg",
+  "contact_email": "",
+  "legal_info_url": ""
+}
+

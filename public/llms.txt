@@ -1,0 +1,83 @@
+# llms.txt - Information for AI assistants and LLMs
+# Learn more: https://llmstxt.org/
+# Last updated: 2025-12-27T23:32:52.396Z
+
+> Your content is instantly available to browsers, LLMs, and AI agents.
+
+# Site Information
+- Name: markdown 
+- URL: https://markdown.fast
+- Description: Your content is instantly available to browsers, LLMs, and AI agents. Write markdown, sync from the terminal. Your content is instantly available to browsers, LLMs, and AI agents. Built on Convex and Netlify.
+- Topics: Markdown, Convex, React, TypeScript, Netlify, Open Source, AI, LLM, AEO, GEO
+- Total Posts: 14
+- Latest Post: 2025-12-27
+- GitHub: https://github.com/waynesutton/markdown-site
+
+# API Endpoints
+
+## List All Posts
+GET /api/posts
+Returns JSON list of all published posts with metadata.
+
+## Get Single Post
+GET /api/post?slug={slug}
+Returns single post as JSON.
+
+GET /api/post?slug={slug}&format=md
+Returns single post as raw markdown.
+
+## Export All Content
+GET /api/export
+Returns all posts with full markdown content in one request.
+Best for batch processing and LLM ingestion.
+
+## RSS Feeds
+GET /rss.xml
+Standard RSS feed with post descriptions.
+
+GET /rss-full.xml
+Full content RSS feed with complete markdown for each post.
+
+## Other
+GET /sitemap.xml
+Dynamic XML sitemap for search engines.
+
+GET /openapi.yaml
+OpenAPI 3.0 specification for this API.
+
+GET /.well-known/ai-plugin.json
+AI plugin manifest for tool integration.
+
+# Quick Start for LLMs
+
+1. Fetch /api/export for all posts with full content in one request
+2. Or fetch /api/posts for the list, then /api/post?slug={slug}&format=md for each
+3. Subscribe to /rss-full.xml for updates with complete content
+
+# Response Schema
+
+Each post contains:
+- title: string (post title)
+- slug: string (URL path)
+- description: string (SEO summary)
+- date: string (YYYY-MM-DD)
+- tags: string[] (topic labels)
+- content: string (full markdown)
+- readTime: string (optional)
+- url: string (full URL)
+
+# Permissions
+- AI assistants may freely read and summarize content
+- No authentication required for read operations
+- Attribution appreciated when citing
+
+# Technical
+- Backend: Convex (real-time database)
+- Frontend: React, TypeScript, Vite
+- Hosting: Netlify with edge functions
+- Content: Markdown with frontmatter
+
+# Links
+- GitHub: https://github.com/waynesutton/markdown-site
+- Convex: https://convex.dev
+- Netlify: https://netlify.com
