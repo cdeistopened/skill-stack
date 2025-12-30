@@ -2,7 +2,7 @@
 
 ---
 Type: page
-Date: 2025-12-29
+Date: 2025-12-30
 ---
 
 # Join the Skill Stack

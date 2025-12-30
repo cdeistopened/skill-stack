@@ -5,6 +5,7 @@ description: "Flip Gary Vee's content pyramid on its head. Build upward toward l
 date: "2024-01-07"
 tags: ["content-strategy", "framework", "long-form", "commanding-the-page"]
 featured: true
+image: "/images/thumbnails/pyramids.png"
 ---
 
 "Content is king, but context is God."

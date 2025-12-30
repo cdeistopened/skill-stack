@@ -2,8 +2,10 @@
 
 This is the homepage index of all published content.
 
-## Blog Posts (36)
+## Blog Posts (37)
 
+- **[Voice Matching](/raw/voice-matching-newsletter.md)** - How I learned to capture any writer's voice—from Joan Didion to fitness influencers—using examples instead of descriptions. A wizard for building reusable voice skills.
+  - Date: 2024-12-29 | Reading time: 3 min read | Tags: voice, style, writing, didion, newsletter
 - **[The 4S Framework: One Framework to Rule Them All](/raw/4s-framework.md)** - The 4S prompting framework transforms rough ideas into polished, effective prose using AI.
   - Date: 2024-09-12 | Reading time: 5 min read | Tags: frameworks, prompt-engineering, ai-writing
 - **[One Framework to Rule Them All: Introducing the 4S Method](/raw/one-framework.md)** - The overarching framework that subsumes other frameworks into an easy-to-use process for writing anything with AI.
@@ -85,6 +87,6 @@ This is the homepage index of all published content.
 
 ---
 
-**Total Content:** 36 posts, 3 pages
+**Total Content:** 37 posts, 3 pages
 
 All content is available as raw markdown files at `/raw/{slug}.md`

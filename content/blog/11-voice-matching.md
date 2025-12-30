@@ -5,6 +5,7 @@ description: "How to train AI to write in any voice—yours, your client's, or y
 date: "2024-01-11"
 tags: ["voice", "style", "ghostwriting", "commanding-the-page"]
 featured: true
+image: "/images/thumbnails/voice-matching.png"
 ---
 
 "A well-dressed sentence walks down the page with a certain attitude."

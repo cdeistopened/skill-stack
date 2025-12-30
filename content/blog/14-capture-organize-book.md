@@ -5,6 +5,7 @@ description: "Only start projects that are already 80% done. How to build a cont
 date: "2024-01-14"
 tags: ["book-writing", "second-brain", "notion", "commanding-the-page"]
 featured: true
+image: "/images/thumbnails/rag.png"
 ---
 
 "The impediment to action advances action. What stands in the way becomes the way."

@@ -5,6 +5,7 @@ description: "The 4S prompting framework transforms rough ideas into polished, e
 date: "2024-09-12"
 tags: ["frameworks", "prompt-engineering", "ai-writing"]
 featured: true
+image: "/images/thumbnails/4s-framework.png"
 ---
 
 A few months ago, I had an epiphany about the contours of a prompting method that would gradually morph into what I call the 4S framework.

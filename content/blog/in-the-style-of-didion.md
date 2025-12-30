@@ -5,6 +5,7 @@ description: "Five words that can make AI write like a human."
 date: "2024-03-21"
 tags: ["ai-writing", "style", "voice"]
 featured: true
+image: "/images/thumbnails/didion.png"
 ---
 
 The Clark Kerr Campus at the University of California, Berkeley, is a sprawling Spanish-style complex perched on a hill overlooking the bay. It was once the site of the California Schools for the Deaf and Blind, institutions that embodied the state's progressive ideals at the turn of the 20th century.

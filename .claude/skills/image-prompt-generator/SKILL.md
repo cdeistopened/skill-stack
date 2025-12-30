@@ -38,6 +38,18 @@ export GEMINI_API_KEY=your_api_key_here
 pip install google-generativeai python-dotenv pillow
 ```
 
+### Available Models
+
+| Model | API Name | Best For |
+|-------|----------|----------|
+| **Flash** | `gemini-2.5-flash-image` | Speed, drafts, iteration |
+| **Pro** | `gemini-3-pro-image-preview` | **Final assets, 16:9 aspect ratio, quality** |
+
+**CRITICAL**: Use `gemini-3-pro-image-preview` for:
+- Thumbnails (need 16:9 aspect ratio)
+- Final production images
+- Any image where aspect_ratio config is needed
+
 ---
 
 ## Workflow Overview
@@ -135,7 +147,7 @@ python scripts/generate_image.py "prompt" --output "./images" --name "my_image"
 
 **Options:**
 - `--model flash` (faster, cheaper) or `--model pro` (higher quality)
-- `--aspect 16:9`, `1:1`, or `9:16` (aspect ratio config only works with pro model; for flash, include ratio in prompt text)
+- `--aspect 16:9`, `1:1`, or `9:16` (**PRO MODEL ONLY** - for flash, you MUST include ratio in prompt text)
 - `--variations N` - generate N versions
 - `--output ./path` - save location
 - `--name prefix` - filename prefix
