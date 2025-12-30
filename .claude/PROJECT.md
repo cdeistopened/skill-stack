@@ -107,7 +107,7 @@ railway up
 - **Live site**: skill-stack.railway.internal
 - **Convex dashboard**: dashboard.convex.dev
 - **GitHub**: github.com/cdeistopened/skill-stack
-- **Fork guide**: docs/FORK-GUIDE.md
+- **Fork template docs**: docs/fork-template/
 
 ---
 
