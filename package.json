@@ -7,6 +7,7 @@
     "dev": "vite",
     "dev:convex": "convex dev",
     "build": "npx vite build",
+    "start": "serve dist -s -l ${PORT:-3000}",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -43,7 +44,8 @@
     "rehype-raw": "^7.0.0",
     "rehype-sanitize": "^6.0.0",
     "remark-breaks": "^4.0.0",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "serve": "^14.2.5"
   },
   "devDependencies": {
     "@types/node": "^25.0.2",
