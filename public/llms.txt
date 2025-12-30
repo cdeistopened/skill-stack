@@ -1,17 +1,17 @@
 # llms.txt - Information for AI assistants and LLMs
 # Learn more: https://llmstxt.org/
-# Last updated: 2025-12-27T23:32:52.396Z
+# Last updated: 2025-12-29
 
-> Your content is instantly available to browsers, LLMs, and AI agents.
+> Stack skills. Ship faster. A newsletter about building with AI.
 
 # Site Information
-- Name: markdown 
-- URL: https://markdown.fast
-- Description: Your content is instantly available to browsers, LLMs, and AI agents. Write markdown, sync from the terminal. Your content is instantly available to browsers, LLMs, and AI agents. Built on Convex and Netlify.
-- Topics: Markdown, Convex, React, TypeScript, Netlify, Open Source, AI, LLM, AEO, GEO
-- Total Posts: 14
-- Latest Post: 2025-12-27
-- GitHub: https://github.com/waynesutton/markdown-site
+- Name: Skill Stack
+- URL: https://skillstack.dev
+- Description: The meta-skill for the AI age. Learn to stack skills and ship faster with AI.
+- Topics: AI Skills, Claude, LLM, Agents, Automation, Content Creation
+- Total Posts: 0
+- Latest Post:
+- GitHub: https://github.com/cdeistopened/skill-stack
 
 # API Endpoints
 
@@ -78,6 +78,5 @@ Each post contains:
 - Content: Markdown with frontmatter
 
 # Links
-- GitHub: https://github.com/waynesutton/markdown-site
+- GitHub: https://github.com/cdeistopened/skill-stack
 - Convex: https://convex.dev
-- Netlify: https://netlify.com

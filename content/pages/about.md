@@ -4,6 +4,7 @@ description: "About Skill Stack and the skills.md protocol"
 slug: "about"
 published: true
 order: 1
+showInNav: false
 ---
 
 # About Skill Stack

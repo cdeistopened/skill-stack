@@ -283,12 +283,12 @@ export interface SiteConfig {
 // Customize this for your site
 export const siteConfig: SiteConfig = {
   // Basic site info
-  name: 'markdown "sync" framework',
-  title: "markdown sync framework",
+  name: "Skill Stack",
+  title: "The meta-skill for the AI age",
   // Optional logo/header image (place in public/images/, set to null to hide)
-  logo: "/images/logo.svg",
+  logo: "/images/skill-stack-logo.png",
   intro: null, // Set in Home.tsx to allow JSX with links
-  bio: `Your content is instantly available to browsers, LLMs, and AI agents.`,
+  bio: `Stack skills. Ship faster. A newsletter about building with AI.`,
 
   // Font family configuration
   // Options: "serif" (New York), "sans" (system fonts), "monospace" (IBM Plex Mono)
@@ -305,49 +305,20 @@ export const siteConfig: SiteConfig = {
   // scrolling: true = infinite scroll marquee, false = static centered grid
   // maxItems: only used when scrolling is false (default: 4)
   logoGallery: {
-    enabled: true,
-    images: [
-      {
-        src: "/images/logos/convex-wordmark-black.svg",
-        href: "/about#the-real-time-twist",
-      },
-      {
-        src: "/images/logos/netlify.svg",
-        href: "https://www.netlify.com/utm_source=markdownfast",
-      },
-      {
-        src: "/images/logos/firecrawl.svg",
-        href: "https://www.markdown.fast/how-to-use-firecrawl",
-      },
-      {
-        src: "/images/logos/markdown.svg",
-        href: "https://markdown.fast/docs",
-      },
-      {
-        src: "/images/logos/react.svg",
-        href: "https://markdown.fast/setup-guide",
-      },
-      {
-        src: "/images/logos/agentmail.svg",
-        href: "https://www.markdown.fast/how-to-use-agentmail/",
-      },
-      {
-        src: "/images/logos/mcp.svg",
-        href: "https://modelcontextprotocol.io/",
-      },
-    ],
+    enabled: false, // Disabled for now - enable when adding partner/tool logos
+    images: [],
     position: "above-footer",
     speed: 30,
     title: "Built with",
-    scrolling: false, // Set to false for static grid showing first maxItems logos
-    maxItems: 4, // Number of logos to show when scrolling is false
+    scrolling: false,
+    maxItems: 4,
   },
 
   // GitHub contributions graph configuration
   // Set enabled to false to hide, or change username to your GitHub username
   gitHubContributions: {
-    enabled: true, // Set to false to hide the contributions graph
-    username: "waynesutton", // Your GitHub username
+    enabled: false, // Set to false to hide the contributions graph
+    username: "cdeistopened", // Your GitHub username
     showYearNavigation: true, // Show arrows to navigate between years
     linkToProfile: true, // Click graph to open GitHub profile
     title: "GitHub Activity", // Optional title above the graph
@@ -372,7 +343,7 @@ export const siteConfig: SiteConfig = {
   // Set enabled to true to create a dedicated /blog page
   blogPage: {
     enabled: true, // Enable the /blog route
-    showInNav: true, // Show "Blog" link in navigation
+    showInNav: false, // Hidden - blog is integrated into home
     title: "Blog", // Page title
     description: "All posts from the blog, sorted by date.", // Optional description
     order: 2, // Nav order (lower = first, e.g., 0 = first, 5 = after pages with order 0-4)
@@ -385,16 +356,22 @@ export const siteConfig: SiteConfig = {
   // Set showInNav: false to hide from nav while keeping the route accessible
   hardcodedNavItems: [
     {
+      slug: "skills",
+      title: "Skills",
+      order: 1,
+      showInNav: true, // Skills marketplace - main nav item
+    },
+    {
       slug: "stats",
       title: "Stats",
       order: 10,
-      showInNav: true,
+      showInNav: false, // Hidden - access at /stats directly
     },
     {
       slug: "write",
       title: "Write",
       order: 20,
-      showInNav: true,
+      showInNav: false, // Hidden - access at /write directly
     },
   ],
 
@@ -425,8 +402,8 @@ export const siteConfig: SiteConfig = {
   // These links use GitHub raw URLs since AI services can reliably fetch from GitHub
   // Note: Content must be pushed to GitHub for AI links to work
   gitHubRepo: {
-    owner: "waynesutton", // GitHub username or organization
-    repo: "markdown-site", // Repository name
+    owner: "cdeistopened", // GitHub username or organization
+    repo: "skill-stack", // Repository name
     branch: "main", // Default branch
     contentPath: "public/raw", // Path to raw markdown files
   },
@@ -449,9 +426,7 @@ export const siteConfig: SiteConfig = {
     showOnPages: true, // Default: show footer on static pages (override with frontmatter)
     showOnBlogPage: true, // Show footer on /blog page
     // Default footer markdown (used when frontmatter footer field is not provided)
-    defaultContent: `Built with [Convex](https://convex.dev) for real-time sync and deployed on [Netlify](https://netlify.com). Read the [project on GitHub](https://github.com/waynesutton/markdown-site) to fork and deploy your own. View [real-time site stats](/stats).
-
-Created by [Wayne](https://x.com/waynesutton) with Convex, Cursor, and Claude Opus 4.5. Follow on [Twitter/X](https://x.com/waynesutton), [LinkedIn](https://www.linkedin.com/in/waynesutton/), and [GitHub](https://github.com/waynesutton). This project is licensed under the MIT [License](https://github.com/waynesutton/markdown-site?tab=MIT-1-ov-file).`,
+    defaultContent: `Built by [Charlie Deist](https://x.com/chdeist). Follow on [Twitter/X](https://x.com/chdeist), [LinkedIn](https://www.linkedin.com/in/charliedeist/), and [GitHub](https://github.com/cdeistopened).`,
   },
 
   // Homepage configuration
@@ -481,8 +456,8 @@ Created by [Wayne](https://x.com/waynesutton) with Convex, Cursor, and Claude Op
       home: {
         enabled: true,
         position: "above-footer",
-        title: "Stay Updated",
-        description: "Get new posts delivered to your inbox.",
+        title: "Get a new AI skill every week",
+        description: "5-minute techniques that make your writing faster and better.",
       },
       blogPage: {
         enabled: true,
@@ -522,13 +497,13 @@ Created by [Wayne](https://x.com/waynesutton) with Convex, Cursor, and Claude Op
     socialLinks: [
       {
         platform: "github",
-        url: "https://github.com/waynesutton/markdown-site",
+        url: "https://github.com/cdeistopened",
       },
-      { platform: "twitter", url: "https://x.com/waynesutton" },
-      { platform: "linkedin", url: "https://www.linkedin.com/in/waynesutton/" },
+      { platform: "twitter", url: "https://x.com/chdeist" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/charliedeist/" },
     ],
     copyright: {
-      siteName: "MarkDown Sync is open-source", // Update with your site/company name
+      siteName: "Skill Stack", // Update with your site/company name
       showYear: true, // Auto-updates to current year
     },
   },

@@ -1,0 +1,52 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+146532080,2024-07-12T15:29:22.328Z,anton@ephrontech.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:29:30.563Z,megabigcorp@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:29:49.305Z,heatherimagined@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:32:17.952Z,ferghodgson@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T15:38:27.779Z,marcvuy@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T15:42:43.593Z,konstantin.kosov@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:43:35.307Z,konstantin.kosov@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:46:24.675Z,marcvuy@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:49:19.516Z,david@harborcomusic.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T15:53:46.809Z,93a54b7a-965a-405a-b6d6-9d149d66e44b@deletion-request.substack.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T15:54:03.333Z,logins21@sailingscience.org,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T16:24:06.514Z,konstantin.kosov@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T16:25:10.285Z,93a54b7a-965a-405a-b6d6-9d149d66e44b@deletion-request.substack.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T16:30:56.943Z,pjdesutter@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T16:42:29.880Z,joshweil@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T16:52:18.288Z,marcvuy@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T17:31:34.222Z,davidicons@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T18:01:40.694Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T18:17:37.021Z,coachnateamado@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T19:12:33.665Z,akubundok@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T19:15:50.272Z,caseygiven@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T19:30:08.593Z,anton@ephrontech.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T20:16:05.444Z,joshweil@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T20:45:39.237Z,megabigcorp@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T21:21:17.616Z,californiacando@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-12T21:27:59.563Z,Cbprincipal@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-12T22:57:22.482Z,amena@untappedlab.co,podcast,everyone,true,VN,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+146532080,2024-07-12T22:57:22.564Z,amena@untappedlab.co,podcast,everyone,true,VN,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+146532080,2024-07-13T00:21:28.268Z,amena@untappedlab.co,podcast,everyone,true,VN,,,,,,Mozilla/5.0
+146532080,2024-07-13T02:15:51.011Z,graham@grahamlynch.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-13T02:35:58.160Z,93a54b7a-965a-405a-b6d6-9d149d66e44b@deletion-request.substack.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-13T06:39:18.461Z,ibeckermayer@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-13T13:09:10.218Z,evacheska@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-13T13:25:28.827Z,ibbonomi@gmail.com,podcast,everyone,true,AR,,,,,,Mozilla/5.0
+146532080,2024-07-13T13:31:13.790Z,KyleBigman@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-13T18:21:06.503Z,margarita.mooney.clayton@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-13T18:21:06.555Z,margarita.mooney.clayton@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-14T03:54:38.765Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-14T03:54:38.878Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-14T03:54:55.071Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-14T13:47:37.378Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-14T13:55:43.277Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-15T06:32:48.930Z,david@jeffersonmaguire.co.uk,podcast,everyone,true,GB,,,,,,Mozilla/5.0
+146532080,2024-07-15T14:16:00.726Z,michael@thecltprep.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-15T23:29:44.222Z,heatherimagined@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-16T04:15:34.296Z,clintgriess@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0
+146532080,2024-07-16T16:05:24.217Z,konstantin.kosov@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-16T20:44:49.394Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-16T20:44:51.628Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-16T20:44:51.995Z,dunham.chrissie@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+146532080,2024-07-17T03:57:09.317Z,clintgriess@gmail.com,podcast,everyone,true,US,,,,,,Mozilla/5.0

@@ -1,0 +1,7 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+142767961,2024-03-21T19:01:03.443Z,ibbonomi@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+142767961,2024-03-21T20:07:59.082Z,chdeist@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+142767961,2024-03-21T20:17:32.150Z,ibbonomi@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+142767961,2024-03-22T04:16:15.178Z,chdeist@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+142767961,2024-03-22T04:21:21.930Z,joshweil@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+142767961,2024-03-22T05:03:19.506Z,joshweil@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

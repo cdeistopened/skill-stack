@@ -5,6 +5,7 @@ published: true
 contactForm: true
 newsletter: false
 order: 4
+showInNav: false
 ---
 
 # Get in Touch

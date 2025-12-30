@@ -4,6 +4,7 @@ import Post from "./pages/Post";
 import Stats from "./pages/Stats";
 import Blog from "./pages/Blog";
 import Write from "./pages/Write";
+import Skills from "./pages/Skills";
 import TagPage from "./pages/TagPage";
 import Unsubscribe from "./pages/Unsubscribe";
 import NewsletterAdmin from "./pages/NewsletterAdmin";
@@ -62,6 +63,8 @@ function App() {
             />
           )}
           <Route path="/stats" element={<Stats />} />
+          {/* Skills marketplace page */}
+          <Route path="/skills" element={<Skills />} />
           {/* Unsubscribe route for newsletter */}
           <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* Blog page route - only enabled when blogPage.enabled is true */}

@@ -37,3 +37,4 @@ fork-config.json
 # PRD files
 prds/metadataforsubs.md
 prds/addchattoapp.md
+.claude/anthropic-skills

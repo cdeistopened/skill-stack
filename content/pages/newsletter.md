@@ -3,7 +3,7 @@ title: Newsletter
 slug: newsletter
 published: true
 order: 3
-showInNav: true
+showInNav: false
 newsletter: true
 ---
 

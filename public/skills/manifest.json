@@ -1,0 +1,108 @@
+[
+  {
+    "id": "anti-ai-writing",
+    "name": "anti-ai-writing",
+    "description": "Transform AI-assisted drafts into authentic, human-sounding content. This skill provides patterns to detect and eliminate AI tells, frameworks for natural writing, and techniques for creating prose that reads as genuinely human. Use when reviewing any AI-generated content or when writing content that must not appear AI-assisted.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "anti-ai-writing/SKILL.md",
+      "anti-ai-writing/references/justin-mikolay-style.md",
+      "anti-ai-writing/references/one-thing-better-style.md",
+      "anti-ai-writing/references/packy-mccormick-style.md",
+      "anti-ai-writing/references/pirate-wires-examples.md",
+      "anti-ai-writing/references/pirate-wires-style.md",
+      "anti-ai-writing/references/sticky-sentences-expanded.md"
+    ]
+  },
+  {
+    "id": "voice-matching-wizard",
+    "name": "voice-matching-wizard",
+    "description": "Transform writing samples into a codified voice style that can be replicated consistently. This wizard guides you through analyzing samples, extracting patterns, and generating a custom voice skill.",
+    "tier": "light-setup",
+    "setupTime": "15-20 minutes",
+    "requires": "2-5 writing samples (500+ words each)",
+    "hasWizard": true,
+    "files": [
+      "voice-matching-wizard/SKILL.md",
+      "voice-matching-wizard/WIZARD.md",
+      "voice-matching-wizard/references/example-voice-skill.md",
+      "voice-matching-wizard/templates/voice-skill.template.md"
+    ]
+  },
+  {
+    "id": "hook-and-headline-writing",
+    "name": "hook-and-headline-writing",
+    "description": "Create attention-grabbing hooks and headlines using 15 proven formulas, sticky techniques, and the 4 U's test. This skill provides systematic frameworks for generating volume (10+ options) and selecting the best performers. Use for newsletter subject lines, social media hooks, blog headlines, or any content that needs to stop the scroll.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "hook-and-headline-writing/SKILL.md",
+      "hook-and-headline-writing/references/10-commandments-checklist.md",
+      "hook-and-headline-writing/references/README.md",
+      "hook-and-headline-writing/references/headline-formulas-library.md",
+      "hook-and-headline-writing/references/hook-types-expanded.md",
+      "hook-and-headline-writing/references/ideation-process.md",
+      "hook-and-headline-writing/references/output-formats.md",
+      "hook-and-headline-writing/references/power-words-library.md",
+      "hook-and-headline-writing/references/sticky-sentence-techniques.md",
+      "hook-and-headline-writing/references/thread-hook-templates.md"
+    ]
+  },
+  {
+    "id": "transcript-polisher",
+    "name": "transcript-polisher",
+    "description": "Transform raw podcast transcripts into polished, readable documents. This skill removes filler words, fixes grammar, adds structure, and preserves authentic voice. Use when processing podcast transcripts, interview recordings, video captions, or any spoken content that needs cleanup while maintaining 100% fidelity to meaning.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "transcript-polisher/SKILL.md",
+      "transcript-polisher/references/README.md",
+      "transcript-polisher/references/editing-guidelines.md",
+      "transcript-polisher/references/structure-template.md"
+    ]
+  },
+  {
+    "id": "brand-identity-wizard",
+    "name": "brand-identity-wizard",
+    "description": "Create a comprehensive brand identity document that other skills can reference. Use this wizard before running newsletter, podcast, or content skills that need brand context. Outputs a brand-identity.md file with persona, voice, audience, values, and messaging.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": true,
+    "files": [
+      "brand-identity-wizard/SKILL.md",
+      "brand-identity-wizard/WIZARD.md",
+      "brand-identity-wizard/references/example-brand-identity.md",
+      "brand-identity-wizard/templates/brand-identity.template.md"
+    ]
+  },
+  {
+    "id": "image-prompt-generator",
+    "name": "image-prompt-generator",
+    "description": "Generate AI images using Gemini image generation API. Use this skill when content needs images - thumbnails, social posts, blog headers, or creative visuals. Follows an iterative workflow - brainstorm concepts, select direction, generate in multiple styles, then produce via API.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "image-prompt-generator/SKILL.md",
+      "image-prompt-generator/references/styles/editorial-conceptual.md",
+      "image-prompt-generator/references/styles/minimalist-ink.md",
+      "image-prompt-generator/references/styles/risograph.md",
+      "image-prompt-generator/references/styles/watercolor-line.md"
+    ]
+  },
+  {
+    "id": "dude-with-sign-writer",
+    "name": "dude-with-sign-writer",
+    "description": "Creates punchy, conversational one-liners in \"Dude With Sign\" style - bold statements that challenge norms, validate feelings, or poke fun at everyday truths. Use when creating short social captions, easel reveal messages, or single-sentence hooks. Not for long-form content or formal messaging.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "dude-with-sign-writer/SKILL.md"
+    ]
+  }
+]

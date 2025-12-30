@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import PostList from "../components/PostList";
-import FeaturedCards from "../components/FeaturedCards";
 import LogoMarquee from "../components/LogoMarquee";
 import GitHubContributions from "../components/GitHubContributions";
 import Footer from "../components/Footer";
@@ -11,38 +9,32 @@ import SocialFooter from "../components/SocialFooter";
 import NewsletterSignup from "../components/NewsletterSignup";
 import siteConfig from "../config/siteConfig";
 
-// Local storage key for view mode preference
-const VIEW_MODE_KEY = "featured-view-mode";
+// Featured post slugs in desired order (posts with thumbnails)
+// TODO: Add 4s-framework and voice once thumbnails are generated
+const FEATURED_SLUGS = [
+  "transform",
+  "rag",
+  "mule",
+  "chicken",
+  "cyborg-writer",
+];
 
 export default function Home() {
-  // Fetch published posts from Convex (only if showing on home)
-  const posts = useQuery(
-    api.posts.getAllPosts,
-    siteConfig.postsDisplay.showOnHome ? {} : "skip",
-  );
+  // Fetch published posts from Convex
+  const posts = useQuery(api.posts.getAllPosts, {});
 
-  // Fetch featured posts and pages from Convex (for list view)
-  const featuredPosts = useQuery(api.posts.getFeaturedPosts);
-  const featuredPages = useQuery(api.pages.getFeaturedPages);
+  // State for expanded year sections
+  const [expandedYears, setExpandedYears] = useState<Record<string, boolean>>({
+    "2024": true,
+    "2023": false,
+  });
 
-  // State for view mode toggle (list or cards)
-  const [viewMode, setViewMode] = useState<"list" | "cards">(
-    siteConfig.featuredViewMode,
-  );
-
-  // Load saved view mode preference from localStorage
-  useEffect(() => {
-    const saved = localStorage.getItem(VIEW_MODE_KEY);
-    if (saved === "list" || saved === "cards") {
-      setViewMode(saved);
-    }
-  }, []);
-
-  // Toggle view mode and save preference
-  const toggleViewMode = () => {
-    const newMode = viewMode === "list" ? "cards" : "list";
-    setViewMode(newMode);
-    localStorage.setItem(VIEW_MODE_KEY, newMode);
+  // Toggle year expansion
+  const toggleYear = (year: string) => {
+    setExpandedYears((prev) => ({
+      ...prev,
+      [year]: !prev[year],
+    }));
   };
 
   // Render logo gallery based on position config
@@ -53,40 +45,39 @@ export default function Home() {
     return null;
   };
 
-  // Build featured list for list view from Convex data
-  const getFeaturedList = () => {
-    if (featuredPosts === undefined || featuredPages === undefined) {
-      return [];
-    }
+  // Get featured posts (6 specific posts with thumbnails)
+  const featuredPosts = posts
+    ? FEATURED_SLUGS.map((slug) => posts.find((p) => p.slug === slug)).filter(
+        Boolean
+      )
+    : [];
 
-    // Combine posts and pages, sort by featuredOrder
-    const combined = [
-      ...featuredPosts.map((p) => ({
-        title: p.title,
-        slug: p.slug,
-        featuredOrder: p.featuredOrder ?? 999,
-      })),
-      ...featuredPages.map((p) => ({
-        title: p.title,
-        slug: p.slug,
-        featuredOrder: p.featuredOrder ?? 999,
-      })),
-    ];
+  // Get remaining posts grouped by year (excluding featured)
+  const getPostsByYear = () => {
+    if (!posts) return {};
 
-    return combined.sort((a, b) => a.featuredOrder - b.featuredOrder);
+    const remaining = posts.filter(
+      (p) => !FEATURED_SLUGS.includes(p.slug)
+    );
+
+    const grouped: Record<string, typeof remaining> = {};
+    remaining.forEach((post) => {
+      const year = new Date(post.date).getFullYear().toString();
+      if (!grouped[year]) grouped[year] = [];
+      grouped[year].push(post);
+    });
+
+    return grouped;
   };
 
-  const featuredList = getFeaturedList();
-  const hasFeaturedContent = featuredList.length > 0;
-
-  // Check if posts should be shown on homepage
-  const showPostsOnHome = siteConfig.postsDisplay.showOnHome;
+  const postsByYear = getPostsByYear();
+  const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
 
   return (
     <div className="home">
-      {/* Header section with intro */}
+      {/* Header section */}
       <header className="home-header">
-        {/* Optional site logo */}
+        {/* Logo and title */}
         {siteConfig.logo && (
           <img
             src={siteConfig.logo}
@@ -96,148 +87,109 @@ export default function Home() {
         )}
         <h1 className="home-name">{siteConfig.name}</h1>
 
-        {/* Intro with JSX support for links */}
-        <p className="home-intro">
-          An open-source publishing framework built for AI agents and developers
-          <br></br>
-          to ship websites, docs, or blogs. <br></br>
-          <br /> Write markdown, sync from the terminal.{" "}
-          <a
-            href="https://github.com/waynesutton/markdown-site"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fork it
-          </a>
-          , customize it, ship it.
-        </p>
-
-        <p className="home-bio">{siteConfig.bio}</p>
-
-        {/* Newsletter signup (below-intro position) */}
-        {siteConfig.newsletter?.enabled &&
-          siteConfig.newsletter.signup.home.enabled &&
-          siteConfig.newsletter.signup.home.position === "below-intro" && (
-            <NewsletterSignup source="home" />
-          )}
-
-        {/* Featured section with optional view toggle */}
-        {hasFeaturedContent && (
-          <div className="home-featured">
-            <div className="home-featured-header">
-              <p className="home-featured-intro">Get started:</p>
-              {siteConfig.showViewToggle && (
-                <button
-                  className="view-toggle-button"
-                  onClick={toggleViewMode}
-                  aria-label={`Switch to ${viewMode === "list" ? "card" : "list"} view`}
-                >
-                  {viewMode === "list" ? (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <rect x="3" y="3" width="7" height="7" />
-                      <rect x="14" y="3" width="7" height="7" />
-                      <rect x="3" y="14" width="7" height="7" />
-                      <rect x="14" y="14" width="7" height="7" />
-                    </svg>
-                  ) : (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="8" y1="6" x2="21" y2="6" />
-                      <line x1="8" y1="12" x2="21" y2="12" />
-                      <line x1="8" y1="18" x2="21" y2="18" />
-                      <line x1="3" y1="6" x2="3.01" y2="6" />
-                      <line x1="3" y1="12" x2="3.01" y2="12" />
-                      <line x1="3" y1="18" x2="3.01" y2="18" />
-                    </svg>
-                  )}
-                </button>
-              )}
-            </div>
-
-            {/* Render list or card view based on mode */}
-            {viewMode === "list" ? (
-              <ul className="home-featured-list">
-                {featuredList.map((item) => (
-                  <li key={item.slug}>
-                    <Link to={`/${item.slug}`} className="home-featured-link">
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <FeaturedCards useFrontmatter={true} />
-            )}
-          </div>
+        {/* Newsletter signup - primary CTA */}
+        {siteConfig.newsletter?.enabled && (
+          <NewsletterSignup
+            source="home"
+            title="Learn a new AI skill every week"
+            description="5-minute read to learn and customize a skill for your use case."
+          />
         )}
       </header>
+
+      {/* Featured posts section - 6 posts with 16:9 thumbnails */}
+      {featuredPosts.length > 0 && (
+        <section className="home-featured-posts">
+          <h2 className="home-featured-title">Featured</h2>
+          <div className="home-featured-grid">
+            {featuredPosts.map((post) => (
+              <Link
+                key={post!.slug}
+                to={`/${post!.slug}`}
+                className="home-featured-card"
+              >
+                {post!.image && (
+                  <div className="home-featured-card-image">
+                    <img src={post!.image} alt={post!.title} />
+                  </div>
+                )}
+                <div className="home-featured-card-content">
+                  <h3 className="home-featured-card-title">{post!.title}</h3>
+                  <span className="home-featured-card-date">
+                    {new Date(post!.date).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Archive posts by year with collapsible sections */}
+      {years.length > 0 && (
+        <section className="home-archive">
+          <h2 className="home-archive-title">Archive</h2>
+          {years.map((year) => (
+            <div key={year} className="home-archive-year">
+              <button
+                className="home-archive-year-toggle"
+                onClick={() => toggleYear(year)}
+                aria-expanded={expandedYears[year]}
+              >
+                <span className="home-archive-year-label">{year}</span>
+                <span className="home-archive-year-count">
+                  {postsByYear[year].length} posts
+                </span>
+                <svg
+                  className={`home-archive-year-icon ${expandedYears[year] ? "expanded" : ""}`}
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              {expandedYears[year] && (
+                <ul className="home-archive-list">
+                  {postsByYear[year].map((post) => (
+                    <li key={post.slug} className="home-archive-item">
+                      <Link to={`/${post.slug}`} className="home-archive-link">
+                        <span className="home-archive-item-title">
+                          {post.title}
+                        </span>
+                        <span className="home-archive-item-date">
+                          {new Date(post.date).toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                          })}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </section>
+      )}
 
       {/* Logo gallery (below-featured position) */}
       {renderLogoGallery("below-featured")}
 
-      {/* Blog posts section - conditionally shown based on config */}
-      {showPostsOnHome && (
-        <section id="posts" className="home-posts">
-          {posts === undefined ? null : posts.length === 0 ? (
-            <p className="no-posts">No posts yet. Check back soon!</p>
-          ) : (
-            <>
-              <PostList
-                posts={
-                  siteConfig.postsDisplay.homePostsLimit
-                    ? posts.slice(0, siteConfig.postsDisplay.homePostsLimit)
-                    : posts
-                }
-              />
-              {/* Show "read more" link if enabled and there are more posts than the limit */}
-              {siteConfig.postsDisplay.homePostsReadMore?.enabled &&
-                siteConfig.postsDisplay.homePostsLimit &&
-                posts.length > siteConfig.postsDisplay.homePostsLimit && (
-                  <div className="home-posts-read-more">
-                    <Link
-                      to={siteConfig.postsDisplay.homePostsReadMore.link}
-                      className="home-posts-read-more-link"
-                    >
-                      {siteConfig.postsDisplay.homePostsReadMore.text}
-                    </Link>
-                  </div>
-                )}
-            </>
-          )}
-        </section>
-      )}
-
-      {/* GitHub contributions graph - above logo gallery */}
+      {/* GitHub contributions graph */}
       {siteConfig.gitHubContributions?.enabled && (
         <GitHubContributions config={siteConfig.gitHubContributions} />
       )}
 
       {/* Logo gallery (above-footer position) */}
       {renderLogoGallery("above-footer")}
-
-      {/* Newsletter signup (above-footer position) */}
-      {siteConfig.newsletter?.enabled &&
-        siteConfig.newsletter.signup.home.enabled &&
-        siteConfig.newsletter.signup.home.position === "above-footer" && (
-          <NewsletterSignup source="home" />
-        )}
 
       {/* Footer section */}
       {siteConfig.footer.enabled && siteConfig.footer.showOnHomepage && (

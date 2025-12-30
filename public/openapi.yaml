@@ -1,15 +1,15 @@
 openapi: 3.0.3
 info:
-  title: markdown sync framework API
+  title: Skill Stack API
   description: |
     API for accessing blog posts and pages as markdown content.
     All endpoints return JSON by default. Use format=md for raw markdown.
-  version: 1.6.0
+  version: 1.0.0
   contact:
-    url: https://github.com/waynesutton/markdown-site
+    url: https://github.com/cdeistopened/skill-stack
 
 servers:
-  - url: https://www.markdown.fast
+  - url: https://skillstack.dev
     description: Production server
 
 paths:
@@ -28,10 +28,10 @@ paths:
                 properties:
                   site:
                     type: string
-                    example: markdown sync framework
+                    example: Skill Stack
                   url:
                     type: string
-                    example: https://markdown.fast
+                    example: https://skillstack.dev
                   posts:
                     type: array
                     items:
@@ -164,10 +164,10 @@ components:
           example: [tutorial, markdown]
         url:
           type: string
-          example: https://markdown.fast/how-to-build-blog
+          example: https://skillstack.dev/how-to-build-blog
         markdownUrl:
           type: string
-          example: https://markdown.fast/api/post?slug=how-to-build-blog
+          example: https://skillstack.dev/api/post?slug=how-to-build-blog
 
     Post:
       type: object

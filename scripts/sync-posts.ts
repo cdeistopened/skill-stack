@@ -145,12 +145,20 @@ function parseMarkdownFile(filePath: string): ParsedPost | null {
       return null;
     }
 
+    // Ensure date is a string (gray-matter may parse it as Date object)
+    let dateString: string;
+    if (frontmatter.date instanceof Date) {
+      dateString = frontmatter.date.toISOString().split("T")[0];
+    } else {
+      dateString = String(frontmatter.date);
+    }
+
     return {
       slug: frontmatter.slug,
       title: frontmatter.title,
       description: frontmatter.description || "",
       content: content.trim(),
-      date: frontmatter.date,
+      date: dateString,
       published: frontmatter.published ?? true,
       tags: frontmatter.tags || [],
       readTime: frontmatter.readTime || calculateReadTime(content),
