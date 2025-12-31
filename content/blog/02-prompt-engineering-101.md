@@ -1,7 +1,7 @@
 ---
 title: "How to Develop Feel for AI"
 slug: "prompt-101"
-description: "You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy."
+description: "Jackie Stewart called it 'mechanical sympathy'—the bond between driver and machine. Here's how to develop it with AI."
 date: "2023-12-15"
 tags: ["prompt-engineering", "frameworks", "commanding-the-page"]
 image: "/images/thumbnails/prompt-101.png"

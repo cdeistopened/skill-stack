@@ -1,6 +1,6 @@
 # What Miyazaki Got Wrong About AI
 
-> Why AI works best as a transformation engine for your ideas, not a replacement for human creativity.
+> The legendary animator dismissed AI as soulless. But he missed something crucial about how creativity actually works.
 
 ---
 Type: post

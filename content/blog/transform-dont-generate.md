@@ -1,7 +1,7 @@
 ---
 title: "Transform, Don't Generate"
 slug: "transform"
-description: "The secret to writing with AI: use it as an assistant to enhance your own ideas, not a substitute for thinking."
+description: "Stop generating slop. The writers who won't get caught use AI to transform their ideas, not replace them. Here's the difference."
 date: "2024-03-11"
 tags: ["ai-writing", "transformation", "content-creation"]
 featured: true

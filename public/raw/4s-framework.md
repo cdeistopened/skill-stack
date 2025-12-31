@@ -1,6 +1,6 @@
 # The 4S Framework: One Framework to Rule Them All
 
-> The 4S prompting framework transforms rough ideas into polished, effective prose using AI.
+> Forget prompt engineering hacks. The 4S framework (Source, Substance, Structure, Style) is the only system you need.
 
 ---
 Type: post

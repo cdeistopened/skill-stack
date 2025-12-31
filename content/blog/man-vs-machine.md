@@ -1,7 +1,7 @@
 ---
 title: "What Miyazaki Got Wrong About AI"
 slug: "man-machine"
-description: "Why AI works best as a transformation engine for your ideas, not a replacement for human creativity."
+description: "The legendary animator dismissed AI as soulless. But he missed something crucial about how creativity actually works."
 date: 2024-02-25
 tags: ["ai-writing", "content-creation", "philosophy", "jobs-to-be-done"]
 image: "/images/thumbnails/man-machine.png"

@@ -1,7 +1,7 @@
 ---
 title: "The 4S Framework: One Framework to Rule Them All"
 slug: "4s-framework"
-description: "The 4S prompting framework transforms rough ideas into polished, effective prose using AI."
+description: "Forget prompt engineering hacks. The 4S framework (Source, Substance, Structure, Style) is the only system you need."
 date: "2024-09-12"
 tags: ["frameworks", "prompt-engineering", "ai-writing"]
 featured: true

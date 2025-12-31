@@ -1,6 +1,6 @@
 # How to Develop Feel for AI
 
-> You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy.
+> Jackie Stewart called it 'mechanical sympathy'—the bond between driver and machine. Here's how to develop it with AI.
 
 ---
 Type: post

@@ -1,7 +1,7 @@
 ---
 title: "In the Style of Didion"
 slug: "didion"
-description: "Five words that can make AI write like a human."
+description: "Five words unlocked something in AI I didn't expect. 'In the style of Didion' encodes an entire philosophy of writing."
 date: "2024-03-21"
 tags: ["ai-writing", "style", "voice"]
 featured: true

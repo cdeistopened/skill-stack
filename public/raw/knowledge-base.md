@@ -1,6 +1,6 @@
 # Building a Second Brain That Never Forgets
 
-> How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge.
+> Most knowledge bases fail because they're too much work. Here's a low-friction system using Slack, Notion, and AI.
 
 ---
 Type: post

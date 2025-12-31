@@ -1,6 +1,6 @@
 # In the Style of Didion
 
-> Five words that can make AI write like a human.
+> Five words unlocked something in AI I didn't expect. 'In the style of Didion' encodes an entire philosophy of writing.
 
 ---
 Type: post

@@ -1,7 +1,7 @@
 ---
 title: "Building a Second Brain That Never Forgets"
 slug: "knowledge-base"
-description: "How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge."
+description: "Most knowledge bases fail because they're too much work. Here's a low-friction system using Slack, Notion, and AI."
 date: 2024-04-05
 tags: ["productivity", "notion", "sops", "knowledge-management", "workflow"]
 image: "/images/thumbnails/knowledge-base.png"

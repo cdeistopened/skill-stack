@@ -9,14 +9,18 @@ import SocialFooter from "../components/SocialFooter";
 import NewsletterSignup from "../components/NewsletterSignup";
 import siteConfig from "../config/siteConfig";
 
-// Featured post slugs in desired order (posts with thumbnails)
-// TODO: Add 4s-framework and voice once thumbnails are generated
+// Featured post slugs - curated selection with best thumbnails and titles
 const FEATURED_SLUGS = [
-  "transform",
-  "rag",
-  "mule",
-  "chicken",
-  "cyborg-writer",
+  "4s-framework",    // Foundational framework post
+  "transform",       // Core philosophy
+  "alchemy",         // Strong visual, great title
+  "prompt-101",      // Mechanical sympathy concept
+  "man-machine",     // Miyazaki contrarian hook
+  "chicken",         // Attention-grabbing story
+  "didion",          // Literary voice matching
+  "mule",            // Anti-unicorn positioning
+  "automation-trap", // Naval's Razor
+  "knowledge-base",  // Practical second brain
 ];
 
 export default function Home() {

@@ -1,6 +1,6 @@
 # Naval's Razor
 
-> Mastering Slow Productivity in the Age of AI
+> Naval Ravikant's filter for what to automate and what to keep human. Cut away everything except what matters.
 
 ---
 Type: post

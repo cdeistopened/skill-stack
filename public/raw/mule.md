@@ -1,6 +1,6 @@
 # Forget Unicorns, Embrace the Mule
 
-> Why indie content creators and solopreneurs - not billion-dollar startups - are best positioned to thrive in the AI era.
+> Venture capitalists chase unicorns. Smart creators build mules—reliable, unglamorous, and impossible to kill. Here's why.
 
 ---
 Type: post

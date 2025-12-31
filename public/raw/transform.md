@@ -1,6 +1,6 @@
 # Transform, Don't Generate
 
-> The secret to writing with AI: use it as an assistant to enhance your own ideas, not a substitute for thinking.
+> Stop generating slop. The writers who won't get caught use AI to transform their ideas, not replace them. Here's the difference.
 
 ---
 Type: post

@@ -1,7 +1,7 @@
 ---
 title: "Naval's Razor"
 slug: "automation-trap"
-description: "Mastering Slow Productivity in the Age of AI"
+description: "Naval Ravikant's filter for what to automate and what to keep human. Cut away everything except what matters."
 date: "2024-06-01"
 tags: ["productivity", "deep-work", "ai-philosophy"]
 image: "/images/thumbnails/automation-trap.png"

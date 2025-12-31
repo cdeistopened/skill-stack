@@ -1,6 +1,6 @@
 # Claude 3 Tried to Kill My Chicken
 
-> When everybody's hailing AI as a panacea, it's worth remembering that even the most sophisticated language models can still get it wrong.
+> I asked Claude for chicken care advice. It recommended a lethal remedy. A cautionary tale about AI confidence and your backyard flock.
 
 ---
 Type: post

@@ -1,7 +1,7 @@
 ---
 title: "Forget Unicorns, Embrace the Mule"
 slug: "mule"
-description: "Why indie content creators and solopreneurs - not billion-dollar startups - are best positioned to thrive in the AI era."
+description: "Venture capitalists chase unicorns. Smart creators build mules—reliable, unglamorous, and impossible to kill. Here's why."
 date: 2024-03-12
 tags: ["indie-business", "solopreneur", "content-strategy", "ai-tools", "bootstrapping"]
 image: "/images/thumbnails/mule.png"
