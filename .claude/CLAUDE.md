@@ -93,4 +93,37 @@ The ultimate goal: **a meta-skill that helps you write your own skills**.
 
 ---
 
+## Strategic Insights (2025-12-30 Oracle Session)
+
+### The Sparse Theory
+> **Spiral is a wizard that asks you what you're trying to say, remembers how you say it, and helps you say it better — one skill at a time.**
+
+### Four Irreducible Pillars
+1. **Wizard** — Questioning interface that extracts substance
+2. **Substance** — The core insight being expressed
+3. **Voice** — Captured writing style (the differentiator)
+4. **Skills** — Modular transformation cartridges
+
+### Key Insight: Substance Extraction is a Skill
+Most people don't know what they want to say until someone helps them find it. The "wizard pattern" (ask one question at a time, branch based on answers) is genuinely underexplored in AI writing tools.
+
+### The Network Effects Question
+Skills are markdown files — infinitely copyable, no moat. The moat isn't the skills themselves. It's the **refinement data**: which questions work, which wizard paths lead to good outputs, which skill combinations succeed.
+
+### Three Traps to Avoid
+1. **Building for imagined users** — Have real users asked for this, or are we guessing?
+2. **Comprehensiveness over clarity** — If you can add detail indefinitely, you don't have a theory yet
+3. **Social layer fantasy** — Individual power first, social second (or never)
+
+### The On-Ramp Problem
+Skills work but are trapped in a distribution format (Claude Code + markdown) that excludes 95% of potential users. The gap isn't the product. It's the on-ramp.
+
+### Recommended Next Step
+Build one Claude Code skill (`/spiral` or `/write`) that embodies the wizard pattern. Use it on real work. Share with 5 people. Document what happens.
+
+**Full session learnings:** See `Root Docs/Spiral/docs/2025-12-30-oracle-session-learnings.md`
+
+---
+
 *This context file helps AI assistants understand the project. Update as the project evolves.*
+*Last strategic update: 2025-12-30*

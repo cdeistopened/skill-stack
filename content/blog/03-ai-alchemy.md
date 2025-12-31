@@ -1,9 +1,10 @@
 ---
-title: "AI Alchemy: The Transformative Power of Transformation Operations"
+title: "The AI Alchemist's Transmutation Engine"
 slug: "alchemy"
 description: "The 'T' in GPT stands for Transformer. The transformative power of AI lies in its capacity for turning lower-value inputs into higher-value outputs."
 date: "2023-12-22"
 tags: ["transformation", "prompt-engineering", "commanding-the-page"]
+image: "/images/thumbnails/alchemy.png"
 ---
 
 "The changing of bodies into light, and light into bodies, is very conformable to the course of Nature, which seems delighted with transmutations."

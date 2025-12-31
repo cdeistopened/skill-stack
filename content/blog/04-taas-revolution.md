@@ -1,9 +1,10 @@
 ---
-title: "The TaaS Revolution: Transcription as the Foundation of AI-Assisted Writing"
+title: "Three Trillion Hours of Conversation, Waiting to Be Unlocked"
 slug: "taas"
 description: "AI transcription services decode the mass of scattered audio content into text—the perfect source material for transformation."
 date: "2023-12-29"
 tags: ["transcription", "content-pipeline", "commanding-the-page"]
+image: "/images/thumbnails/taas.png"
 ---
 
 In the biblical account, the Tower of Babel was an edifice of human pride. It was erected with the ambition to reach the heavens and "make a name for the builders," but this unity of purpose was fractured by a divine intervention that confounded their language, leaving the tower as a testament to their scattered aspirations.

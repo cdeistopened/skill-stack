@@ -1,4 +1,4 @@
-# Prompt Engineering 101: The Subtle Art of AI Whispering
+# How to Develop Feel for AI
 
 > You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy.
 

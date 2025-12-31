@@ -4,6 +4,7 @@ slug: "anthropology"
 description: "What mimetic theory and the quest for authenticity reveal about content creation in the age of extreme internet personas."
 date: 2024-03-25
 tags: ["content-strategy", "authenticity", "mimetic-theory", "philosophy", "creator-economy"]
+image: "/images/thumbnails/anthropology.png"
 ---
 
 # Towards an Anthropology of Content

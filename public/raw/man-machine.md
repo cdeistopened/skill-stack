@@ -1,4 +1,4 @@
-# Man vs. Machine: Defining AI's Role in Content Creation
+# What Miyazaki Got Wrong About AI
 
 > Why AI works best as a transformation engine for your ideas, not a replacement for human creativity.
 

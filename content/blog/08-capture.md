@@ -4,6 +4,7 @@ slug: "capture"
 description: "The quality of AI output depends entirely on the quality of your inputs. Here's how to mine your own expertise for source material."
 date: "2024-01-08"
 tags: ["capture", "source-material", "coder-framework", "commanding-the-page"]
+image: "/images/thumbnails/capture.png"
 ---
 
 "Garbage In, Garbage Out"

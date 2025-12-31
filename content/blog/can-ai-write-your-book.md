@@ -4,6 +4,7 @@ slug: "ai-book"
 description: "Spoiler: No. A review of Designrr.io and why tools promising instant AI-generated books are a dead end."
 date: 2024-04-08
 tags: ["ai-tools", "book-writing", "content-quality", "tool-review"]
+image: "/images/thumbnails/ai-book.png"
 ---
 
 # Can AI Write Your Book in Minutes?

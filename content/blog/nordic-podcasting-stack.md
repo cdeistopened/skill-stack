@@ -4,6 +4,7 @@ slug: "nordic"
 description: "Stop wasting time on amateur podcasting. Here are the six essential tools for professional-grade content creation."
 date: 2024-04-01
 tags: ["podcasting", "tools", "workflow", "content-creation", "productivity"]
+image: "/images/thumbnails/nordic.png"
 ---
 
 # The NORDIC Podcasting Stack: 6 Tools to Become a Full-Stack Creator

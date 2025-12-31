@@ -4,6 +4,7 @@ slug: "distill"
 description: "With the main point established, rebuild your outline from the ground up—aligning every element with your central thesis."
 date: "2024-01-10"
 tags: ["distill", "outlining", "coder-framework", "commanding-the-page"]
+image: "/images/thumbnails/distill.png"
 ---
 
 "We can rebuild him. We have the technology. We can make him better than he was. Better... stronger... faster."

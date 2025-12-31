@@ -1,9 +1,10 @@
 ---
-title: "The DIY Guide to Building a Low-Friction Knowledge Base"
+title: "Building a Second Brain That Never Forgets"
 slug: "knowledge-base"
 description: "How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge."
 date: 2024-04-05
 tags: ["productivity", "notion", "sops", "knowledge-management", "workflow"]
+image: "/images/thumbnails/knowledge-base.png"
 ---
 
 # The DIY Guide to Building a Low-Friction Knowledge Base

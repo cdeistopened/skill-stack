@@ -357,7 +357,7 @@ export const siteConfig: SiteConfig = {
   hardcodedNavItems: [
     {
       slug: "skills",
-      title: "Skills",
+      title: "Skill Stack",
       order: 1,
       showInNav: true, // Skills marketplace - main nav item
     },

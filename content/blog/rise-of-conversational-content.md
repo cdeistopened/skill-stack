@@ -4,6 +4,7 @@ slug: "conversational"
 description: "How platforms like Vibehut are unlocking hidden value in the trillions of hours of video conversations happening every year."
 date: 2024-03-20
 tags: ["content-repurposing", "video", "transcription", "conversational-ai", "workflow"]
+image: "/images/thumbnails/conversational.png"
 ---
 
 # The Rise of Conversational Content

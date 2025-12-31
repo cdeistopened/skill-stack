@@ -4,6 +4,7 @@ slug: "express"
 description: "Transform your skeleton outline into living prose—one bite-sized section at a time for maximum control and quality."
 date: "2024-01-12"
 tags: ["drafting", "express", "coder-framework", "commanding-the-page"]
+image: "/images/thumbnails/express.png"
 ---
 
 "Then he said to me, 'Prophesy to these bones... I will make breath enter you, and you will come to life.'"

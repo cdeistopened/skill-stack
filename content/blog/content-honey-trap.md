@@ -1,9 +1,10 @@
 ---
-title: "The Content Honey Trap: A Framework for Podcast Promotion"
+title: "Why Nobody Clicks Your Audiograms"
 slug: "honey-trap"
 description: "How to create promotional content that draws listeners in and builds trust over time, using the 4S framework."
 date: 2024-05-25
 tags: ["content-strategy", "podcasting", "marketing", "4s-framework", "capsho"]
+image: "/images/thumbnails/honey-trap.png"
 ---
 
 # The Content Honey Trap: A Framework for Podcast Promotion

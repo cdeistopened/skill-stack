@@ -10,9 +10,9 @@ This is the homepage index of all published content.
   - Date: 2024-09-12 | Reading time: 5 min read | Tags: frameworks, prompt-engineering, ai-writing
 - **[One Framework to Rule Them All: Introducing the 4S Method](/raw/one-framework.md)** - The overarching framework that subsumes other frameworks into an easy-to-use process for writing anything with AI.
   - Date: 2024-06-15 | Reading time: 5 min read | Tags: 4s-framework, ai-writing, prompting, content-creation, methodology
-- **[Escaping the Automation Trap](/raw/automation-trap.md)** - Mastering Slow Productivity in the Age of AI
+- **[Naval's Razor](/raw/automation-trap.md)** - Mastering Slow Productivity in the Age of AI
   - Date: 2024-06-01 | Reading time: 3 min read | Tags: productivity, deep-work, ai-philosophy
-- **[The Content Honey Trap: A Framework for Podcast Promotion](/raw/honey-trap.md)** - How to create promotional content that draws listeners in and builds trust over time, using the 4S framework.
+- **[Why Nobody Clicks Your Audiograms](/raw/honey-trap.md)** - How to create promotional content that draws listeners in and builds trust over time, using the 4S framework.
   - Date: 2024-05-25 | Reading time: 4 min read | Tags: content-strategy, podcasting, marketing, 4s-framework, capsho
 - **[Simple Marketing for Smart People: An AI-Assisted Review](/raw/marketing.md)** - How I used Claude to apply Tiago Forte and Billy Broas's marketing framework to refine core messaging.
   - Date: 2024-05-20 | Reading time: 5 min read | Tags: marketing, ai-workflow, book-review, messaging, claude
@@ -20,7 +20,7 @@ This is the homepage index of all published content.
   - Date: 2024-04-15 | Reading time: 3 min read | Tags: claude, ai-ethics, ai-limitations, homesteading
 - **[Can AI Write Your Book in Minutes?](/raw/ai-book.md)** - Spoiler: No. A review of Designrr.io and why tools promising instant AI-generated books are a dead end.
   - Date: 2024-04-08 | Reading time: 3 min read | Tags: ai-tools, book-writing, content-quality, tool-review
-- **[The DIY Guide to Building a Low-Friction Knowledge Base](/raw/knowledge-base.md)** - How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge.
+- **[Building a Second Brain That Never Forgets](/raw/knowledge-base.md)** - How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge.
   - Date: 2024-04-05 | Reading time: 4 min read | Tags: productivity, notion, sops, knowledge-management, workflow
 - **[The NORDIC Podcasting Stack: 6 Tools to Become a Full-Stack Creator](/raw/nordic.md)** - Stop wasting time on amateur podcasting. Here are the six essential tools for professional-grade content creation.
   - Date: 2024-04-01 | Reading time: 6 min read | Tags: podcasting, tools, workflow, content-creation, productivity
@@ -44,7 +44,7 @@ This is the homepage index of all published content.
   - Date: 2024-03-06 | Reading time: 5 min read | Tags: creator-economy, ai-writing, content-strategy
 - **[Claude 3 Is Here: What Content Creators Need to Know](/raw/claude-3.md)** - How Anthropic's Claude 3 is revolutionizing content creation with advanced language understanding and generation capabilities.
   - Date: 2024-03-04 | Reading time: 4 min read | Tags: claude, anthropic, ai-writing, content-creation, llm
-- **[Man vs. Machine: Defining AI's Role in Content Creation](/raw/man-machine.md)** - Why AI works best as a transformation engine for your ideas, not a replacement for human creativity.
+- **[What Miyazaki Got Wrong About AI](/raw/man-machine.md)** - Why AI works best as a transformation engine for your ideas, not a replacement for human creativity.
   - Date: 2024-02-25 | Reading time: 5 min read | Tags: ai-writing, content-creation, philosophy, jobs-to-be-done
 - **[Distill & Express: Bridging the Archipelago](/raw/express-book.md)** - Transform scattered islands of ideas into coherent chapters. The final stage of turning your content database into a finished book.
   - Date: 2024-01-15 | Reading time: 5 min read | Tags: book-writing, distill, express, commanding-the-page
@@ -68,11 +68,11 @@ This is the homepage index of all published content.
   - Date: 2024-01-06 | Reading time: 5 min read | Tags: seo, podcasting, chain-of-thought, commanding-the-page
 - **[Polishing: Sweetened Condensed Transcripts](/raw/polish.md)** - Omit surplus words. Transform messy speech into clear writing with AI's 'Improve Writing' wand.
   - Date: 2024-01-05 | Reading time: 6 min read | Tags: transcription, editing, commanding-the-page
-- **[The TaaS Revolution: Transcription as the Foundation of AI-Assisted Writing](/raw/taas.md)** - AI transcription services decode the mass of scattered audio content into text—the perfect source material for transformation.
+- **[Three Trillion Hours of Conversation, Waiting to Be Unlocked](/raw/taas.md)** - AI transcription services decode the mass of scattered audio content into text—the perfect source material for transformation.
   - Date: 2023-12-29 | Reading time: 5 min read | Tags: transcription, content-pipeline, commanding-the-page
-- **[AI Alchemy: The Transformative Power of Transformation Operations](/raw/alchemy.md)** - The 'T' in GPT stands for Transformer. The transformative power of AI lies in its capacity for turning lower-value inputs into higher-value outputs.
+- **[The AI Alchemist's Transmutation Engine](/raw/alchemy.md)** - The 'T' in GPT stands for Transformer. The transformative power of AI lies in its capacity for turning lower-value inputs into higher-value outputs.
   - Date: 2023-12-22 | Reading time: 5 min read | Tags: transformation, prompt-engineering, commanding-the-page
-- **[Prompt Engineering 101: The Subtle Art of AI Whispering](/raw/prompt-101.md)** - You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy.
+- **[How to Develop Feel for AI](/raw/prompt-101.md)** - You don't have to be an engineer to be a racing driver, but you do have to have Mechanical Sympathy.
   - Date: 2023-12-15 | Reading time: 7 min read | Tags: prompt-engineering, frameworks, commanding-the-page
 - **[The Hottest New Programming Language Is... English?](/raw/english-programming.md)** - Prompt Engineering is natural language programming. You don't need to code to command AI.
   - Date: 2023-12-08 | Reading time: 8 min read | Tags: ai-writing, prompt-engineering, commanding-the-page

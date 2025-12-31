@@ -4,6 +4,7 @@ slug: "english-programming"
 description: "Prompt Engineering is natural language programming. You don't need to code to command AI."
 date: "2023-12-08"
 tags: ["ai-writing", "prompt-engineering", "commanding-the-page"]
+image: "/images/thumbnails/english-programming.png"
 ---
 
 "Prompt Engineering is natural language programming."

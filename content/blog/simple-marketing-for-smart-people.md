@@ -4,6 +4,7 @@ slug: "marketing"
 description: "How I used Claude to apply Tiago Forte and Billy Broas's marketing framework to refine core messaging."
 date: 2024-05-20
 tags: ["marketing", "ai-workflow", "book-review", "messaging", "claude"]
+image: "/images/thumbnails/marketing.png"
 ---
 
 # Simple Marketing for Smart People: An AI-Assisted Review

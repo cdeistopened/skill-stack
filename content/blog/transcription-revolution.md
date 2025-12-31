@@ -4,6 +4,7 @@ slug: "transcription"
 description: "How AI-powered transcription is unlocking trapped value in your audio content and enabling new workflows for content creators."
 date: 2024-03-11
 tags: ["transcription", "content-repurposing", "ai-tools", "podcasting", "workflow"]
+image: "/images/thumbnails/transcription.png"
 ---
 
 # The Transcription Revolution

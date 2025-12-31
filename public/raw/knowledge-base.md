@@ -1,4 +1,4 @@
-# The DIY Guide to Building a Low-Friction Knowledge Base
+# Building a Second Brain That Never Forgets
 
 > How to use Slack and Notion to create a searchable, scalable repository of SOPs and institutional knowledge.
 

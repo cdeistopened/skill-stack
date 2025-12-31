@@ -4,6 +4,7 @@ slug: "claude-3"
 description: "How Anthropic's Claude 3 is revolutionizing content creation with advanced language understanding and generation capabilities."
 date: 2024-03-04
 tags: ["claude", "anthropic", "ai-writing", "content-creation", "llm"]
+image: "/images/thumbnails/claude-3.png"
 ---
 
 # Claude 3 Is Here: What Content Creators Need to Know

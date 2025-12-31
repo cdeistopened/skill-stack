@@ -4,6 +4,7 @@ slug: "express-book"
 description: "Transform scattered islands of ideas into coherent chapters. The final stage of turning your content database into a finished book."
 date: "2024-01-15"
 tags: ["book-writing", "distill", "express", "commanding-the-page"]
+image: "/images/thumbnails/express-book.png"
 ---
 
 "Bad authors dilute their ideas to fill a book. Brilliant authors distill their ideas to fit into a book."

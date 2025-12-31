@@ -4,6 +4,7 @@ slug: "one-framework"
 description: "The overarching framework that subsumes other frameworks into an easy-to-use process for writing anything with AI."
 date: 2024-06-15
 tags: ["4s-framework", "ai-writing", "prompting", "content-creation", "methodology"]
+image: "/images/thumbnails/one-framework.png"
 ---
 
 # One Framework to Rule Them All: Introducing the 4S Method

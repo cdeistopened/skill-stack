@@ -4,6 +4,7 @@ slug: "organize"
 description: "Deconstruct your source material into component ideas and zero in on the main point—the thesis that will guide your entire piece."
 date: "2024-01-09"
 tags: ["organize", "outlining", "coder-framework", "commanding-the-page"]
+image: "/images/thumbnails/organize.png"
 ---
 
 "For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it?"

@@ -4,6 +4,7 @@ slug: "seo-strategies"
 description: "Why stealing competitor content with AI is a dead end, and how to win at SEO the right way."
 date: 2024-03-11
 tags: ["seo", "ai-content", "content-strategy", "marketing"]
+image: "/images/thumbnails/seo-strategies.png"
 ---
 
 # A Tale of Two SEO Strategies

@@ -4,6 +4,7 @@ slug: "peak-content"
 description: "Rumors of the demise of the creator economy are greatly exaggerated."
 date: "2024-03-06"
 tags: ["creator-economy", "ai-writing", "content-strategy"]
+image: "/images/thumbnails/peak-content.png"
 ---
 
 AI and Web 3.0 have lowered the barriers to content creation with... mixed results.

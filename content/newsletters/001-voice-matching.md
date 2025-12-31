@@ -70,6 +70,7 @@ The skill file I built has dozens of signature sentences. Each one teaches the A
 
 Setup takes 15-20 minutes. You need 2-5 writing samples, 500+ words each.
 
+<this feels too truncated>
 Three ways to use it. Codify your own voice for consistency across newsletters, social, long-form. Build a voice skill before any ghostwriting project. Or analyze writers you admire—extract their signature sentences, absorb their patterns, make them your own.
 
 ---

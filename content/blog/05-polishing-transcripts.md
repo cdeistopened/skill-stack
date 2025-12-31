@@ -4,6 +4,7 @@ slug: "polish"
 description: "Omit surplus words. Transform messy speech into clear writing with AI's 'Improve Writing' wand."
 date: "2024-01-05"
 tags: ["transcription", "editing", "commanding-the-page"]
+image: "/images/thumbnails/polish.png"
 ---
 
 "Omit Surplus Words."

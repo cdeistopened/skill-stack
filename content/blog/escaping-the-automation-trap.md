@@ -1,9 +1,10 @@
 ---
-title: "Escaping the Automation Trap"
+title: "Naval's Razor"
 slug: "automation-trap"
 description: "Mastering Slow Productivity in the Age of AI"
 date: "2024-06-01"
 tags: ["productivity", "deep-work", "ai-philosophy"]
+image: "/images/thumbnails/automation-trap.png"
 ---
 
 You're drowning in an endless sea of productivity tools, each one promising to be the panacea you've always dreamed of. More apps, more plugins, more "game-changing" AI assistants. But the more you try to streamline, the more fragmented your focus becomes.

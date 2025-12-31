@@ -4,6 +4,7 @@ slug: "refine"
 description: "Polish your draft with hooks, calls to action, smooth transitions, and three techniques to make AI-assisted writing sound more human."
 date: "2024-01-13"
 tags: ["refining", "editing", "coder-framework", "commanding-the-page"]
+image: "/images/thumbnails/refine.png"
 ---
 
 "The sculptor arrives at his end by taking away what is superfluous."

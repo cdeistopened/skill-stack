@@ -4,6 +4,7 @@ slug: "seo-notes"
 description: "A chain-of-thought prompting process that turns podcast transcripts into keyword-optimized show notes that actually get discovered."
 date: "2024-01-06"
 tags: ["seo", "podcasting", "chain-of-thought", "commanding-the-page"]
+image: "/images/thumbnails/seo-notes.png"
 ---
 
 "Content is fire. Social media is gasoline."

@@ -1,4 +1,4 @@
-# Escaping the Automation Trap
+# Naval's Razor
 
 > Mastering Slow Productivity in the Age of AI
 
