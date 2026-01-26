@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#1a1a1a"/>
+  <!-- 4 stacked pages with depth offset -->
+  <rect x="16" y="42" width="28" height="6" rx="1" fill="#8B7355"/>
+  <rect x="14" y="34" width="28" height="6" rx="1" fill="#A68B6A"/>
+  <rect x="12" y="26" width="28" height="6" rx="1" fill="#C4A882"/>
+  <rect x="10" y="18" width="28" height="6" rx="1" fill="#E8D4B8"/>
+</svg>

@@ -1,0 +1,82 @@
+# llms.txt - Information for AI assistants and LLMs
+# Learn more: https://llmstxt.org/
+# Last updated: 2025-12-29
+
+> Stack skills. Ship faster. A newsletter about building with AI.
+
+# Site Information
+- Name: Skill Stack
+- URL: https://skillstack.md
+- Description: The meta-skill for the AI age. Learn to stack skills and ship faster with AI.
+- Topics: AI Skills, Claude, LLM, Agents, Automation, Content Creation
+- Total Posts: 0
+- Latest Post:
+- GitHub: https://github.com/cdeistopened/skill-stack
+
+# API Endpoints
+
+## List All Posts
+GET /api/posts
+Returns JSON list of all published posts with metadata.
+
+## Get Single Post
+GET /api/post?slug={slug}
+Returns single post as JSON.
+
+GET /api/post?slug={slug}&format=md
+Returns single post as raw markdown.
+
+## Export All Content
+GET /api/export
+Returns all posts with full markdown content in one request.
+Best for batch processing and LLM ingestion.
+
+## RSS Feeds
+GET /rss.xml
+Standard RSS feed with post descriptions.
+
+GET /rss-full.xml
+Full content RSS feed with complete markdown for each post.
+
+## Other
+GET /sitemap.xml
+Dynamic XML sitemap for search engines.
+
+GET /openapi.yaml
+OpenAPI 3.0 specification for this API.
+
+GET /.well-known/ai-plugin.json
+AI plugin manifest for tool integration.
+
+# Quick Start for LLMs
+
+1. Fetch /api/export for all posts with full content in one request
+2. Or fetch /api/posts for the list, then /api/post?slug={slug}&format=md for each
+3. Subscribe to /rss-full.xml for updates with complete content
+
+# Response Schema
+
+Each post contains:
+- title: string (post title)
+- slug: string (URL path)
+- description: string (SEO summary)
+- date: string (YYYY-MM-DD)
+- tags: string[] (topic labels)
+- content: string (full markdown)
+- readTime: string (optional)
+- url: string (full URL)
+
+# Permissions
+- AI assistants may freely read and summarize content
+- No authentication required for read operations
+- Attribution appreciated when citing
+
+# Technical
+- Backend: Convex (real-time database)
+- Frontend: React, TypeScript, Vite
+- Hosting: Netlify with edge functions
+- Content: Markdown with frontmatter
+
+# Links
+- GitHub: https://github.com/cdeistopened/skill-stack
+- Convex: https://convex.dev

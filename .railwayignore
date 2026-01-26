@@ -1,0 +1,8 @@
+# Railway ignore file - we want to INCLUDE images
+# Only ignore things we definitely don't need
+
+node_modules
+dist
+.git
+.DS_Store
+*.local

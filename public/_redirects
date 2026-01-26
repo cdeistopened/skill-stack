@@ -1,0 +1,11 @@
+# Static files served directly
+/robots.txt    /robots.txt    200
+/llms.txt      /llms.txt      200
+/favicon.svg   /favicon.svg   200
+
+# Raw markdown files served directly
+/raw/*         /raw/:splat    200
+
+# SPA fallback for all other routes
+/*    /index.html   200
+
