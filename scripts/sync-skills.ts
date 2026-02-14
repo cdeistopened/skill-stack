@@ -24,6 +24,8 @@ const PUBLISHED_SKILLS = [
   "brand-identity-wizard",
   "image-prompt-generator",
   "dude-with-sign-writer",
+  "retardmax",
+  "video-generator",
 ];
 
 interface SkillMeta {

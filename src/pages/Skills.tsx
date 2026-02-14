@@ -120,6 +120,28 @@ const SKILLS: Skill[] = [
     hasWizard: false,
     image: "/images/thumbnails/honey-trap.png",
   },
+  {
+    id: "retardmax",
+    name: "Retardmax",
+    description:
+      "Radical simplification for knowledge work. Stop overthinking, start shipping. The Beethoven Test, the Whoopsie Method, and five pillars of intuition-first action.",
+    category: "Productivity",
+    tier: "plug-and-play",
+    setupTime: "5 min",
+    hasWizard: false,
+    relatedPost: "/retardmax",
+  },
+  {
+    id: "video-generator",
+    name: "Video Generator",
+    description:
+      "Generate AI videos with Google VEO 3.1 or OpenAI Sora. VEO for native audio and dialogue, Sora for visual quality and 12-second clips. Includes Python script and cinematic prompting guide.",
+    category: "Visual",
+    tier: "full-setup",
+    setupTime: "15-20 min",
+    requires: "Gemini API key and/or OpenAI API key",
+    hasWizard: false,
+  },
 ];
 
 // Category colors
@@ -129,6 +151,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   Editing: "#10b981",
   "Setup & Meta": "#6b7280",
   Visual: "#8b5cf6",
+  Productivity: "#ef4444",
 };
 
 export default function Skills() {
