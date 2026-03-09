@@ -356,13 +356,13 @@ export const siteConfig: SiteConfig = {
   // Set showInNav: false to hide from nav while keeping the route accessible
   hardcodedNavItems: [
     {
-      slug: "skills",
+      slug: "",
       title: "Skills",
       order: 0,
       showInNav: true,
     },
     {
-      slug: "",
+      slug: "newsletter",
       title: "Newsletter",
       order: 1,
       showInNav: true,

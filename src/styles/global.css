@@ -7830,6 +7830,35 @@ body {
   margin: 0;
 }
 
+/* Featured skills section */
+.skills-featured-section {
+  margin-bottom: 48px;
+}
+
+.skills-featured-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.skills-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 640px) {
+  .skills-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card-featured {
+  border-width: 2px;
+  border-color: var(--text-secondary);
+}
+
 /* Category filters */
 .skills-filters {
   display: flex;

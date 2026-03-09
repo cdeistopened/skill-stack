@@ -37,32 +37,10 @@ function App() {
     <SidebarProvider>
       <Layout>
         <Routes>
-          {/* Homepage route - either default Home or custom page/post */}
-          <Route
-            path="/"
-            element={
-              useCustomHomepage ? (
-                <Post
-                  slug={siteConfig.homepage.slug!}
-                  isHomepage={true}
-                  homepageType={
-                    siteConfig.homepage.type === "default"
-                      ? undefined
-                      : siteConfig.homepage.type
-                  }
-                />
-              ) : (
-                <Home />
-              )
-            }
-          />
-          {/* Original homepage route (when custom homepage is set) */}
-          {useCustomHomepage && (
-            <Route
-              path={siteConfig.homepage.originalHomeRoute || "/home"}
-              element={<Home />}
-            />
-          )}
+          {/* Homepage is the Skills catalog */}
+          <Route path="/" element={<Skills />} />
+          {/* Newsletter (formerly homepage) */}
+          <Route path="/newsletter" element={<Home />} />
           <Route path="/stats" element={<Stats />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
