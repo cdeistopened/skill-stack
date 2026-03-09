@@ -9,9 +9,6 @@ import SocialFooter from "../components/SocialFooter";
 import NewsletterSignup from "../components/NewsletterSignup";
 import siteConfig from "../config/siteConfig";
 
-// Hero essay slug - the main manifesto shown above newsletter
-const HERO_SLUG = "skill-stack";
-
 // Featured post slugs - curated selection with best thumbnails and titles
 const FEATURED_SLUGS = [
   "4s-framework", // Foundational framework post
@@ -52,9 +49,6 @@ export default function Home() {
     return null;
   };
 
-  // Get hero essay
-  const heroPost = posts?.find((p) => p.slug === HERO_SLUG);
-
   // Get featured posts (specific posts with thumbnails)
   const featuredPosts = posts
     ? FEATURED_SLUGS.map((slug) => posts.find((p) => p.slug === slug)).filter(
@@ -85,7 +79,6 @@ export default function Home() {
     <div className="home">
       {/* Header section */}
       <header className="home-header">
-        {/* Logo and title */}
         {siteConfig.logo && (
           <img
             src={siteConfig.logo}
@@ -96,44 +89,55 @@ export default function Home() {
           />
         )}
         <h1 className="home-name">{siteConfig.name}</h1>
+        <p className="home-bio">{siteConfig.bio}</p>
       </header>
 
-      {/* Hero essay - the manifesto */}
-      {heroPost && (
-        <section className="home-hero">
-          <Link to={`/${heroPost.slug}`} className="home-hero-link">
-            <div className="home-hero-image">
-              <img
-                src="/images/thumbnails/skill-stack.png"
-                alt={heroPost.title}
-                loading="eager"
-                decoding="async"
-              />
+      {/* Skills-first: quick install section */}
+      <section className="home-install">
+        <h2 className="home-install-title">Get started</h2>
+        <div className="home-install-steps">
+          <div className="home-install-step">
+            <span className="home-install-step-number">1</span>
+            <div>
+              <strong>Browse skills</strong>
+              <p>Pick a SKILL.md from the <Link to="/skills">catalog</Link></p>
             </div>
-            <article className="home-hero-content">
-              <h2 className="home-hero-title">{heroPost.title}</h2>
-              <p className="home-hero-description">{heroPost.description}</p>
-              <span className="home-hero-cta">Read the manifesto →</span>
-            </article>
-          </Link>
-        </section>
-      )}
+          </div>
+          <div className="home-install-step">
+            <span className="home-install-step-number">2</span>
+            <div>
+              <strong>Install</strong>
+              <code className="home-install-code">mkdir -p .claude/skills && cp SKILL.md .claude/skills/my-skill/</code>
+            </div>
+          </div>
+          <div className="home-install-step">
+            <span className="home-install-step-number">3</span>
+            <div>
+              <strong>Use it</strong>
+              <p>Claude Code reads it automatically. Just start working.</p>
+            </div>
+          </div>
+        </div>
+        <Link to="/skills" className="home-install-cta">
+          Browse all skills →
+        </Link>
+      </section>
 
-      {/* Newsletter signup */}
+      {/* Newsletter signup — below install */}
       {siteConfig.newsletter?.enabled && (
         <section className="home-newsletter">
           <NewsletterSignup
             source="home"
-            title="Building a one-man media empire, one skill at a time."
-            description="Get one new content marketing Skill.md + tutorial delivered to your inbox every Monday."
+            title="Get new skills in your inbox."
+            description="One SKILL.md + tutorial every Monday. Free."
           />
         </section>
       )}
 
-      {/* Featured posts section - 6 posts with 16:9 thumbnails */}
+      {/* Featured posts section */}
       {featuredPosts.length > 0 && (
         <section className="home-featured-posts">
-          <h2 className="home-featured-title">Featured</h2>
+          <h2 className="home-featured-title">Essays</h2>
           <div className="home-featured-grid">
             {featuredPosts.map((post) => (
               <Link
@@ -167,7 +171,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* Archive posts by year with collapsible sections */}
+      {/* Archive posts by year */}
       {years.length > 0 && (
         <section className="home-archive">
           <h2 className="home-archive-title">Archive</h2>
@@ -218,23 +222,18 @@ export default function Home() {
         </section>
       )}
 
-      {/* Logo gallery (below-featured position) */}
       {renderLogoGallery("below-featured")}
 
-      {/* GitHub contributions graph */}
       {siteConfig.gitHubContributions?.enabled && (
         <GitHubContributions config={siteConfig.gitHubContributions} />
       )}
 
-      {/* Logo gallery (above-footer position) */}
       {renderLogoGallery("above-footer")}
 
-      {/* Footer section */}
       {siteConfig.footer.enabled && siteConfig.footer.showOnHomepage && (
         <Footer content={siteConfig.footer.defaultContent} />
       )}
 
-      {/* Social footer section */}
       {siteConfig.socialFooter?.enabled &&
         siteConfig.socialFooter.showOnHomepage && <SocialFooter />}
     </div>

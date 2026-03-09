@@ -284,11 +284,11 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Basic site info
   name: "Skill Stack",
-  title: "The meta-skill for the AI age",
+  title: "Install a skill. Ship something real.",
   // Optional logo/header image (place in public/images/, set to null to hide)
   logo: "/images/skill-stack-logo.png",
   intro: null, // Set in Home.tsx to allow JSX with links
-  bio: `Stack skills. Ship faster. A newsletter about building with AI.`,
+  bio: `Open-source SKILL.md files for Claude Code. Download, install, build.`,
 
   // Font family configuration
   // Options: "serif" (New York), "sans" (system fonts), "monospace" (IBM Plex Mono)
@@ -356,14 +356,14 @@ export const siteConfig: SiteConfig = {
   // Set showInNav: false to hide from nav while keeping the route accessible
   hardcodedNavItems: [
     {
-      slug: "",
-      title: "Newsletter",
+      slug: "skills",
+      title: "Skills",
       order: 0,
       showInNav: true,
     },
     {
-      slug: "skills",
-      title: "Skills",
+      slug: "",
+      title: "Newsletter",
       order: 1,
       showInNav: true,
     },
@@ -467,10 +467,10 @@ export const siteConfig: SiteConfig = {
     signup: {
       home: {
         enabled: true,
-        position: "above-footer",
-        title: "Building a mini media empire one skill at a time.",
+        position: "below-intro",
+        title: "Get new skills in your inbox.",
         description:
-          "Get one new Skill.md + tutorial delivered to your inbox every Monday.",
+          "One SKILL.md + tutorial every Monday. Free.",
       },
       blogPage: {
         enabled: true,
