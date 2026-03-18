@@ -143,6 +143,17 @@ const SKILLS: Skill[] = [
     requires: "Gemini API key and/or OpenAI API key",
     hasWizard: false,
   },
+  {
+    id: "blood-panel-analyzer",
+    name: "Blood Panel Analyzer",
+    description:
+      "Interpret blood work through Ray Peat's metabolic framework. 38 marker profiles, 18 metabolic threads, 4-tier reliability system. Paste your labs, get the metabolic story — not a checklist. Built from 691 claims mined across 503 transcripts.",
+    category: "Analysis",
+    tier: "plug-and-play",
+    setupTime: "5 min",
+    hasWizard: false,
+    featured: true,
+  },
   // --- Featured skills ---
   {
     id: "pdf-vision",
