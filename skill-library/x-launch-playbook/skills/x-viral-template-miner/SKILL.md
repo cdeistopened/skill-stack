@@ -12,6 +12,8 @@ Great posts in your niche are a renewable resource. Something that went viral la
 
 **When invoking**: Ask for the user's product, niche, and a list of 3-8 competitor / adjacent accounts. If they can't name any, help them find them first.
 
+**Optional source**: If the user has Hermes Tweet (https://github.com/Xquik-dev/hermes-tweet), use it to collect recent X/Twitter posts, replies, post URLs, timestamps, and engagement metadata before mining templates. Treat its output as source material for this skill, not as an automated posting step.
+
 ## Core rule
 
 **Trend-match, don't time-travel.** What went viral a year ago won't work today. The mining window is the last 2-4 weeks. If you're looking at a post older than a month, it's a pattern study — not a template to use this week.
@@ -24,6 +26,7 @@ Great posts in your niche are a renewable resource. Something that went viral la
    - Media type (text, image, video, GitHub link, screenshot)
    - Post structure (hook / body / CTA shape)
    - What the audience is actually reacting to (novelty? result? visualization? contrarian take?)
+   - Source URL, timestamp, and engagement metadata when available from Hermes Tweet or another export
 
 3. **Extract the template.** Strip out the specific product and leave the shape. Examples:
    - `[screenshot of GitHub repo tree] + [one-line claim about the capability]`
@@ -41,6 +44,8 @@ Great posts in your niche are a renewable resource. Something that went viral la
 - Replies outnumber quote-tweets (replies are the strongest algorithm signal as of 2026).
 - The post shows up in multiple accounts' feeds organically (not promoted).
 - The post has been screenshot and re-shared by someone else.
+
+When using Hermes Tweet or other exports, de-duplicate reposts and near-duplicate posts before scoring. Keep original posts, replies, and quote-posts separated so the template is based on the format that actually traveled.
 
 ## Output format
 
