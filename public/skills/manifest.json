@@ -1,5 +1,16 @@
 [
   {
+    "id": "wrap",
+    "name": "wrap",
+    "description": "Session-end memory discipline. Detects which projects were touched, writes updates to WORKBENCH.md (volatile state) + skills + persistent memory, and proposes CLAUDE.md edits. Two-tier — obvious low-blast-radius writes are applied automatically and reported; evergreen/destructive changes ask first. Use when the user says \"/wrap\", \"wrap up\", \"end of session\", \"let's close out\", or when the session is clearly winding down.",
+    "tier": "plug-and-play",
+    "setupTime": "5 min",
+    "hasWizard": false,
+    "files": [
+      "wrap/SKILL.md"
+    ]
+  },
+  {
     "id": "anti-ai-writing",
     "name": "anti-ai-writing",
     "description": "Transform AI-assisted drafts into authentic, human-sounding content. This skill provides patterns to detect and eliminate AI tells, frameworks for natural writing, and techniques for creating prose that reads as genuinely human. Use when reviewing any AI-generated content or when writing content that must not appear AI-assisted.",
@@ -104,17 +115,6 @@
     "hasWizard": false,
     "files": [
       "dude-with-sign-writer/SKILL.md"
-    ]
-  },
-  {
-    "id": "retardmax",
-    "name": "retardmax",
-    "description": "Radical simplification for knowledge work. Stop overthinking, start shipping. Based on Elisha Long's retardmaxxing philosophy.",
-    "tier": "plug-and-play",
-    "setupTime": "5 min",
-    "hasWizard": false,
-    "files": [
-      "retardmax/SKILL.md"
     ]
   },
   {

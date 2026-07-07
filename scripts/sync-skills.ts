@@ -17,6 +17,7 @@ const SKILLS_OUTPUT = path.join(process.cwd(), "public", "skills");
 
 // Skills to publish (matches Skills.tsx catalog)
 const PUBLISHED_SKILLS = [
+  "wrap",
   "anti-ai-writing",
   "voice-matching-wizard",
   "hook-and-headline-writing",

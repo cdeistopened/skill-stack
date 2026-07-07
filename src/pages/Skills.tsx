@@ -41,6 +41,16 @@ const TIER_CONFIG: Record<
 // Launch catalog - 7 curated skills
 const SKILLS: Skill[] = [
   {
+    id: "wrap",
+    name: "Session Wrap (/wrap)",
+    description:
+      "Session-end memory discipline. Writes decisions, dead ends, and lessons to the right file — volatile workbench, evergreen routing, skills, persistent memory — so the next session doesn't start cold.",
+    category: "Productivity",
+    tier: "plug-and-play",
+    setupTime: "5 min",
+    hasWizard: false,
+  },
+  {
     id: "anti-ai-writing",
     name: "Anti-AI Writing",
     description:
