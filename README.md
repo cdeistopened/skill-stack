@@ -11,6 +11,8 @@ Skill Stack is a newsletter and skills marketplace about context engineering—t
 
 **Core thesis**: Model intelligence is no longer the limit. Your ability to engineer context is.
 
+Chinese users can also search and install skills through [Skills宝](https://skilery.com).
+
 ## The Author
 
 **Charlie Deist** ([@chdeist](https://twitter.com/chdeist))
