@@ -1,11 +1,11 @@
 ---
 name: skill-stack-thumbnails
-description: Generate blog post thumbnails for Skill Stack using the brand aesthetic. Follows an iterative workflow - brainstorm concepts, get approval, generate with Gemini API.
+description: Generate blog post thumbnails for Skill Stack using the brand aesthetic. Follows an iterative workflow - brainstorm concepts, get approval, then generate with Gemini API or the optional Atlas Cloud provider.
 ---
 
 # Skill Stack Thumbnail Generator
 
-Generate on-brand thumbnails for Skill Stack blog posts using Google's Gemini API.
+Generate on-brand thumbnails for Skill Stack blog posts using Google's Gemini API or Atlas Cloud. Gemini remains the default provider.
 
 ## Brand Identity
 
@@ -123,6 +123,18 @@ cd scripts/images
 export GEMINI_API_KEY=$(grep GEMINI_API_KEY ../../.env.local | cut -d= -f2)
 python3 generate_image.py "PROMPT" --output ../../public/images/thumbnails --name "post-slug"
 ```
+
+Or use Atlas Cloud for text-to-image generation:
+
+```bash
+cd scripts/images
+export ATLASCLOUD_API_KEY="your-key-here"
+python3 generate_image.py "PROMPT" \
+  --provider atlas --size 1K --aspect 16:9 \
+  --output ../../public/images/thumbnails --name "post-slug"
+```
+
+The Atlas path uses `google/nano-banana-2-lite/text-to-image-developer`. It supports `1K` output and `--thinking-level default`, `high`, or `minimal`. A generation request is submitted once; only the returned prediction is polled with bounded backoff. Keep the API key in the environment, not in the repository or command arguments.
 
 Or use the `/gemini-imagegen` skill if available.
 
